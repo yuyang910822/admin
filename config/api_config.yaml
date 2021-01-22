@@ -40,6 +40,9 @@ url:
   rack: 'http://gateway.siemens.test.internal.forwardx.com/rpm-server/page/arrived/arriveReceiveStation/receiveMaterials'
 
 
+
+
+
 data:
   login: '{"userName":"xmz_admin","password":"64f19f650121e3b5a839694c237bd2f1"}'
   create:
