@@ -1,0 +1,11 @@
+
+mysql:
+  host: 'rm-2ze9h45vus669c676.mysql.rds.aliyuncs.com'
+  user: dev_cluster
+  password: 'PqouUIyMpyU09MQT'
+  port: 3306
+  charset: utf8
+  database: test_siemens_rpm
+
+
+

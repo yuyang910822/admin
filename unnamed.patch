@@ -1,0 +1,110 @@
+Index: config/path.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- config/path.py	(revision 90fcb741ad564fe24b8ff9ab51a3eaaf9b71c1c6)
++++ config/path.py	(date 1611301478569)
+@@ -9,6 +9,4 @@
+ 
+ path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ yaml_path = path +'/config/api_config.yaml'
+-
+-'sss'
+ log_path = path + '/log/自动化.txt'
+\ No newline at end of file
+Index: common/excel.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- common/excel.py	(revision 90fcb741ad564fe24b8ff9ab51a3eaaf9b71c1c6)
++++ common/excel.py	(date 1611302313953)
+@@ -1,5 +1,5 @@
+ import openpyxl,re
+-from config.path import ExcelConfig
++# from config.path import ExcelConfig
+ import random,time
+ class DoExcel():
+ 
+@@ -11,6 +11,7 @@
+         """打开工作薄，选择表单"""
+         self.workbook = openpyxl.load_workbook(self.f)
+         self.sheet = self.workbook[self.s]
++        return self.sheet
+ 
+     def close(self):
+         """关闭工作薄对象，释放内存"""
+@@ -48,14 +49,14 @@
+ 
+ 
+ 
+-    def result(self,data,new,v):
+-        self.open()
+-        # 写入数据
+-        self.sheet.cell(data['id']+1,new,v)
+-        # 保存文件
+-        self.workbook.save(ExcelConfig.testDataPant)
+-        # 关闭工作薄
+-        self.close()
++    # def result(self,data,new,v):
++    #     self.open()
++    #     # 写入数据
++    #     self.sheet.cell(data['id']+1,new,v)
++    #     # 保存文件
++    #     self.workbook.save(ExcelConfig.testDataPant)
++    #     # 关闭工作薄
++    #     self.close()
+ 
+ 
+ 
+@@ -73,41 +74,16 @@
+                 data['json'] = data['json'].replace('data',data1)
+ 
+ 
++
++
+ if __name__ == '__main__':
+-    pass
++    a = DoExcel(r'C:\Users\yuyang\Desktop\clusterw20210115【西门子项目】测试报告.xlsx','测试报告')
+ 
+-#
+-#
+-#         if not phoneid == None:
+-#             if re.search('phoneid',str(data)):
+-#                 p  = set_phoneid()
+-#                 data['json'] = data['json'].replace('phoneid', p)
+-#                 data['expect'] = data['expect'].replace('phoneid', p)
+-#
+-#         if not id == None:
+-#             if re.search('expectid',str(data)):
+-#                 if re.search('id',str(id)):
+-#                     i = id['data']['id']
+-#
+-#                     data['expect'] = data['expect'].replace('expectid', str(i))
+-#                     self.open()
+-#                     # 写入数据
+-#                     self.sheet.cell(data['id'] + 1, 6, data['expect'])
+-#                     self.sheet.cell(data['id'] + 1, 5, data['json'])
+-#                     # 保存文件
+-#                     self.workbook.save(ExcelConfig.testResuitPath)
+-#                     # 关闭工作薄
+-#                     self.close()
+-#
+-#         return data
+-#
+-#
+-#
+-# if __name__ == '__main__':
+-#     a = DoExcel(r'C:\Users\yuyang\Desktop\clusterw20201030【长荣项目】--测试报告.xlsx','测试报告')
+-#     b = a.all()
+-#
+-#
++    b = a.open()
++    for i in b:
++        for j in i:
++            print(j.value)
++
+ #
+ #
+ 

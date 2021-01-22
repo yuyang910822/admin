@@ -1,0 +1,869 @@
+2021-01-14 15:04:49,111 - get_log.py[line:47] - ERROR: 1
+2021-01-14 15:04:49,111 - get_log.py[line:48] - ERROR: 1
+2021-01-14 15:04:49,111 - get_log.py[line:49] - ERROR: 1
+2021-01-20 19:46:00,700 - siemens_task.py[line:86] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150102","originNo":20210120194600,"detailList":[{"stationName":"装载点2-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点2-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 19:46:00,823 - siemens_task.py[line:99] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003189'}}
+2021-01-20 19:46:00,823 - siemens_task.py[line:101] - DEBUG: 反射:BY20210120003189
+2021-01-20 19:46:00,866 - siemens_task.py[line:93] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003189
+2021-01-20 19:46:00,929 - siemens_task.py[line:106] - DEBUG: 查询任务状态结果:创建
+2021-01-20 19:46:05,980 - task_b.py[line:33] - DEBUG: 当前模式：pending
+2021-01-20 19:48:07,161 - siemens_task.py[line:84] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150102","originNo":20210120194807,"detailList":[{"stationName":"装载点2-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点2-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 19:48:07,296 - siemens_task.py[line:97] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003190'}}
+2021-01-20 19:48:07,296 - siemens_task.py[line:99] - DEBUG: 反射:BY20210120003190
+2021-01-20 19:48:07,337 - siemens_task.py[line:91] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003190
+2021-01-20 19:48:07,427 - siemens_task.py[line:104] - DEBUG: 查询任务状态结果:创建
+2021-01-20 21:59:15,179 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120215915,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 21:59:15,301 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003191'}}
+2021-01-20 21:59:15,302 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003191
+2021-01-20 21:59:15,343 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003191
+2021-01-20 22:00:06,000 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120220006,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 22:00:06,112 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003192'}}
+2021-01-20 22:00:06,113 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003192
+2021-01-20 22:00:06,159 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003192
+2021-01-20 22:01:38,076 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120220138,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 22:01:38,194 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003193'}}
+2021-01-20 22:01:38,194 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003193
+2021-01-20 22:01:38,236 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003193
+2021-01-20 22:01:55,323 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120220155,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 22:01:55,435 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003194'}}
+2021-01-20 22:01:55,436 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003194
+2021-01-20 22:01:55,493 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003194
+2021-01-20 22:01:55,531 - siemens_task.py[line:105] - DEBUG: 查询任务状态结果:{'status': {'statusCode': 500, 'systemCode': 107, 'statusReason': '服务内部异常', 'stacks': [{'statusCode': 500, 'systemCode': 106, 'statusReason': '服务内部异常', 'stacks': []}]}}
+2021-01-20 22:05:28,971 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120220528,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 22:05:29,094 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003195'}}
+2021-01-20 22:05:29,094 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003195
+2021-01-20 22:05:29,137 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003195
+2021-01-20 22:05:29,181 - siemens_task.py[line:105] - DEBUG: 查询任务状态结果:{'status': {'statusCode': 500, 'systemCode': 107, 'statusReason': '服务内部异常', 'stacks': [{'statusCode': 500, 'systemCode': 106, 'statusReason': '服务内部异常', 'stacks': []}]}}
+2021-01-20 22:07:19,074 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120220719,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 22:07:19,184 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003196'}}
+2021-01-20 22:07:19,185 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003196
+2021-01-20 22:08:04,827 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120220804,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 22:08:04,944 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003197'}}
+2021-01-20 22:08:04,944 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003197
+2021-01-20 22:08:04,993 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003197
+2021-01-20 22:08:44,470 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120220844,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 22:08:44,601 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003198'}}
+2021-01-20 22:08:44,601 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003198
+2021-01-20 22:08:44,673 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003198
+2021-01-20 22:08:44,720 - siemens_task.py[line:105] - DEBUG: 查询任务状态结果:{'status': {'statusCode': 500, 'systemCode': 107, 'statusReason': '服务内部异常', 'stacks': [{'statusCode': 500, 'systemCode': 106, 'statusReason': '服务内部异常', 'stacks': []}]}}
+2021-01-20 22:09:29,838 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120220929,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 22:09:29,960 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003199'}}
+2021-01-20 22:09:29,961 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003199
+2021-01-20 22:09:30,000 - siemens_task.py[line:104] - DEBUG: <class 'dict'>
+2021-01-20 22:09:30,001 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003199
+2021-01-20 22:09:30,001 - siemens_task.py[line:105] - DEBUG: <class 'str'>
+2021-01-20 22:09:30,053 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003199
+2021-01-20 22:09:30,101 - siemens_task.py[line:107] - DEBUG: 查询任务状态结果:{'status': {'statusCode': 500, 'systemCode': 107, 'statusReason': '服务内部异常', 'stacks': [{'statusCode': 500, 'systemCode': 106, 'statusReason': '服务内部异常', 'stacks': []}]}}
+2021-01-20 22:09:58,171 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120220958,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 22:09:58,298 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003200'}}
+2021-01-20 22:09:58,298 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003200
+2021-01-20 22:09:58,362 - siemens_task.py[line:104] - DEBUG: <class 'dict'>
+2021-01-20 22:09:58,362 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003200
+2021-01-20 22:09:58,362 - siemens_task.py[line:105] - DEBUG: <class 'dict'>
+2021-01-20 22:09:58,407 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003200
+2021-01-20 22:09:58,444 - siemens_task.py[line:107] - DEBUG: 查询任务状态结果:{'status': {'statusCode': 500, 'systemCode': 107, 'statusReason': '服务内部异常', 'stacks': [{'statusCode': 500, 'systemCode': 106, 'statusReason': '服务内部异常', 'stacks': []}]}}
+2021-01-20 22:10:24,192 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120221024,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 22:10:24,352 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003201'}}
+2021-01-20 22:10:24,352 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003201
+2021-01-20 22:10:24,408 - siemens_task.py[line:104] - DEBUG: <class 'dict'>
+2021-01-20 22:10:24,409 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003201
+2021-01-20 22:10:24,410 - siemens_task.py[line:105] - DEBUG: <class 'dict'>
+2021-01-20 22:10:24,458 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003201
+2021-01-20 22:10:24,493 - siemens_task.py[line:107] - DEBUG: 查询任务状态结果:{'status': {'statusCode': 500, 'systemCode': 107, 'statusReason': '服务内部异常', 'stacks': [{'statusCode': 500, 'systemCode': 106, 'statusReason': '服务内部异常', 'stacks': []}]}}
+2021-01-20 22:11:46,721 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120221146,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 22:11:46,843 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003202'}}
+2021-01-20 22:11:46,844 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003202
+2021-01-20 22:11:46,886 - siemens_task.py[line:104] - DEBUG: <class 'dict'>
+2021-01-20 22:11:46,887 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003202
+2021-01-20 22:11:46,887 - siemens_task.py[line:105] - DEBUG: <class 'dict'>
+2021-01-20 22:11:46,924 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003202
+2021-01-20 22:11:47,024 - siemens_task.py[line:107] - DEBUG: 查询任务状态结果:{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'items': [{'id': 3342, 'customerName': '西门子', 'workSpaceName': '西门子001', 'transportNo': 'BY20210120003202', 'transportType': '10150101', 'transportTypeName': 'A点送料', 'originNo': '20210120221146', 'originType': '10150101', 'sourceType': 1, 'status': 100, 'createTime': 1611151907000, 'updateTime': 1611151907000, 'statusDesc': '创建', 'sourceTypeDesc': '模板生成'}], 'totalCount': 1, 'currentPage': 1, 'pageSize': 10}}
+2021-01-20 22:11:47,025 - siemens_task.py[line:108] - DEBUG: 查询任务状态结果:创建
+2021-01-20 22:12:11,923 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120221211,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 22:12:12,051 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003203'}}
+2021-01-20 22:12:12,051 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003203
+2021-01-20 22:12:12,098 - siemens_task.py[line:104] - DEBUG: <class 'dict'>
+2021-01-20 22:12:12,098 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003203
+2021-01-20 22:12:12,098 - siemens_task.py[line:105] - DEBUG: <class 'dict'>
+2021-01-20 22:12:12,139 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003203
+2021-01-20 22:12:12,188 - siemens_task.py[line:107] - DEBUG: 查询任务状态结果:{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'items': [{'id': 3343, 'customerName': '西门子', 'workSpaceName': '西门子001', 'transportNo': 'BY20210120003203', 'transportType': '10150101', 'transportTypeName': 'A点送料', 'originNo': '20210120221211', 'originType': '10150101', 'sourceType': 1, 'status': 100, 'createTime': 1611151932000, 'updateTime': 1611151932000, 'statusDesc': '创建', 'sourceTypeDesc': '模板生成'}], 'totalCount': 1, 'currentPage': 1, 'pageSize': 10}}
+2021-01-20 22:12:12,188 - siemens_task.py[line:108] - DEBUG: 查询任务状态结果:创建
+2021-01-20 22:13:13,721 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120221313,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 22:13:13,864 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003204'}}
+2021-01-20 22:13:13,864 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003204
+2021-01-20 22:13:13,916 - siemens_task.py[line:104] - DEBUG: <class 'dict'>
+2021-01-20 22:13:13,917 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003204
+2021-01-20 22:13:13,917 - siemens_task.py[line:105] - DEBUG: <class 'dict'>
+2021-01-20 22:13:13,964 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003204
+2021-01-20 22:13:14,030 - siemens_task.py[line:107] - DEBUG: 查询任务状态结果:{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'items': [{'id': 3344, 'customerName': '西门子', 'workSpaceName': '西门子001', 'transportNo': 'BY20210120003204', 'transportType': '10150101', 'transportTypeName': 'A点送料', 'originNo': '20210120221313', 'originType': '10150101', 'sourceType': 1, 'status': 100, 'createTime': 1611151994000, 'updateTime': 1611151994000, 'statusDesc': '创建', 'sourceTypeDesc': '模板生成'}], 'totalCount': 1, 'currentPage': 1, 'pageSize': 10}}
+2021-01-20 22:13:14,030 - siemens_task.py[line:108] - DEBUG: 查询任务状态结果:创建
+2021-01-20 22:15:11,802 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120221511,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 22:15:11,934 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003205'}}
+2021-01-20 22:15:11,935 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003205
+2021-01-20 22:15:12,016 - siemens_task.py[line:104] - DEBUG: <class 'dict'>
+2021-01-20 22:15:12,016 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003205
+2021-01-20 22:15:12,016 - siemens_task.py[line:105] - DEBUG: <class 'dict'>
+2021-01-20 22:15:12,073 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003205
+2021-01-20 22:15:12,166 - siemens_task.py[line:107] - DEBUG: 查询任务状态结果:{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'items': [{'id': 3345, 'customerName': '西门子', 'workSpaceName': '西门子001', 'transportNo': 'BY20210120003205', 'transportType': '10150101', 'transportTypeName': 'A点送料', 'originNo': '20210120221511', 'originType': '10150101', 'sourceType': 1, 'status': 100, 'createTime': 1611152112000, 'updateTime': 1611152112000, 'statusDesc': '创建', 'sourceTypeDesc': '模板生成'}], 'totalCount': 1, 'currentPage': 1, 'pageSize': 10}}
+2021-01-20 22:15:12,166 - siemens_task.py[line:108] - DEBUG: 查询任务状态结果:创建
+2021-01-20 22:15:45,372 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120221545,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 22:15:45,482 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003206'}}
+2021-01-20 22:15:45,482 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003206
+2021-01-20 22:15:45,533 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参:ageSize":10,"transportNo":"BY20210120003206
+2021-01-20 22:15:45,607 - siemens_task.py[line:105] - DEBUG: 查询任务状态结果:创建
+2021-01-20 22:18:36,221 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120221836,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 22:18:36,327 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003207'}}
+2021-01-20 22:18:36,327 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003207
+2021-01-20 22:18:36,369 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参：ransportNo":"BY20210120003207
+2021-01-20 22:18:36,428 - siemens_task.py[line:105] - DEBUG: 查询任务状态结果:创建
+2021-01-20 22:18:45,265 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120221845,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 22:18:45,387 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003208'}}
+2021-01-20 22:18:45,387 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003208
+2021-01-20 22:18:45,427 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参：":"BY20210120003208
+2021-01-20 22:18:45,484 - siemens_task.py[line:105] - DEBUG: 查询任务状态结果:创建
+2021-01-20 22:19:01,229 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120221901,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 22:19:01,334 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003209'}}
+2021-01-20 22:19:01,334 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003209
+2021-01-20 22:19:01,373 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参：BY20210120003209
+2021-01-20 22:19:01,422 - siemens_task.py[line:105] - DEBUG: 查询任务状态结果:创建
+2021-01-20 22:19:28,767 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120221928,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 22:19:28,890 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003210'}}
+2021-01-20 22:19:28,890 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003210
+2021-01-20 22:19:28,932 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参：BY20210120003210
+2021-01-20 22:19:28,983 - siemens_task.py[line:105] - DEBUG: 查询任务状态结果:创建
+2021-01-20 22:19:36,069 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210120221936,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-20 22:19:36,196 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210120003211'}}
+2021-01-20 22:19:36,196 - siemens_task.py[line:100] - DEBUG: 反射:BY20210120003211
+2021-01-20 22:19:36,235 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参：BY20210120003211
+2021-01-20 22:19:36,294 - siemens_task.py[line:105] - DEBUG: 查询任务状态结果:创建
+2021-01-20 22:19:41,350 - task_a.py[line:35] - DEBUG: 当前模式：pending
+2021-01-20 22:19:46,374 - task_a.py[line:35] - DEBUG: 当前模式：pending
+2021-01-20 22:19:51,395 - task_a.py[line:35] - DEBUG: 当前模式：pending
+2021-01-20 22:19:56,417 - task_a.py[line:35] - DEBUG: 当前模式：pending
+2021-01-21 14:54:12,157 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210121145412,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-21 14:54:12,306 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210121003214'}}
+2021-01-21 14:54:12,306 - siemens_task.py[line:100] - DEBUG: 反射:BY20210121003214
+2021-01-21 14:54:12,355 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参：BY20210121003214
+2021-01-21 14:54:12,424 - siemens_task.py[line:105] - DEBUG: 查询任务状态结果:创建
+2021-01-21 14:54:17,478 - task_a.py[line:35] - DEBUG: 当前模式：processing
+2021-01-21 14:54:17,489 - task_a.py[line:37] - DEBUG: 导航中
+2021-01-21 14:54:19,413 - siemens_task.py[line:127] - DEBUG: 提前到达结果{"requestId":"9e3cdfb7-8b4a-43ab-b89f-6449fe915bf9","result":{"data":"finish job success"}}
+2021-01-21 14:54:19,413 - task_a.py[line:44] - ERROR: {'requestId': '9e3cdfb7-8b4a-43ab-b89f-6449fe915bf9', 'result': {'data': 'finish job success'}}
+2021-01-21 14:54:30,425 - task_a.py[line:48] - DEBUG: 当前模式：finished
+2021-01-21 14:54:30,435 - task_a.py[line:50] - DEBUG: 到达装载点
+2021-01-21 14:54:31,502 - task_a.py[line:58] - DEBUG: 当前模式：processing
+2021-01-21 14:54:31,514 - task_a.py[line:60] - DEBUG: docking中
+2021-01-21 14:54:32,580 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 14:54:33,591 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 14:54:34,603 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 14:54:35,613 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 14:54:36,623 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 14:54:37,634 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 14:54:38,644 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 14:54:39,655 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 14:54:40,667 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 14:54:41,679 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 14:54:42,692 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 14:54:43,703 - task_a.py[line:69] - DEBUG: 当前模式：intervene
+2021-01-21 14:54:43,703 - task_a.py[line:71] - DEBUG: docking中
+2021-01-21 14:54:43,784 - siemens_task.py[line:133] - DEBUG: {"requestId":"640f8e97-78ed-4135-8210-05fbb26b2561","result":{"data":"resume sub task success"}}
+2021-01-21 14:54:43,784 - task_a.py[line:78] - ERROR: {'requestId': '640f8e97-78ed-4135-8210-05fbb26b2561', 'result': {'data': 'resume sub task success'}}
+2021-01-21 14:54:44,795 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 14:54:45,807 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 14:54:46,819 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 14:54:47,830 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 14:54:48,842 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 14:54:49,852 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 14:54:50,863 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 14:54:51,877 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 14:54:52,887 - task_a.py[line:82] - DEBUG: 当前模式：finished
+2021-01-21 14:54:53,950 - task_a.py[line:92] - DEBUG: 当前模式：finished
+2021-01-21 14:54:55,016 - task_a.py[line:102] - DEBUG: 当前模式：processing
+2021-01-21 14:54:55,094 - siemens_task.py[line:127] - DEBUG: 提前到达结果{"requestId":"363e2aa2-9c5b-40f1-b994-377c41d79485","result":{"data":"finish job success"}}
+2021-01-21 14:55:06,105 - task_a.py[line:113] - DEBUG: 当前模式：finished
+2021-01-21 14:55:07,171 - task_a.py[line:123] - DEBUG: 当前模式：finished
+2021-01-21 14:55:08,259 - task_a.py[line:133] - DEBUG: 当前模式：finished
+2021-01-21 14:55:11,365 - siemens_task.py[line:111] - DEBUG: [6236, 3354]
+2021-01-21 14:55:11,366 - siemens_task.py[line:115] - DEBUG: {"detailList":[{"taskDetailId":"6236"}],"stationName":"西门子自动卸载点-001","taskId":"3354"}
+2021-01-21 14:55:11,465 - siemens_task.py[line:121] - DEBUG: {"status":{"statusCode":0,"systemCode":102,"statusReason":""},"result":true}
+2021-01-21 14:55:12,523 - task_a.py[line:164] - DEBUG: 当前模式：processing
+2021-01-21 14:55:27,726 - siemens_task.py[line:127] - DEBUG: 提前到达结果{"requestId":"befe19b9-5c00-4e31-aebe-0105a6652571","result":{"data":"finish job success"}}
+2021-01-21 14:55:27,726 - task_a.py[line:174] - ERROR: {'requestId': 'befe19b9-5c00-4e31-aebe-0105a6652571', 'result': {'data': 'finish job success'}}
+2021-01-21 14:55:28,745 - task_a.py[line:178] - DEBUG: 当前模式：finished
+2021-01-21 14:55:29,809 - task_a.py[line:188] - DEBUG: 当前模式：processing
+2021-01-21 14:55:31,001 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:32,015 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:33,026 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:34,037 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:35,049 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:36,059 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:37,072 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:38,084 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:39,097 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:40,109 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:41,121 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:42,139 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:43,153 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:44,167 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:45,180 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:46,193 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:47,208 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:48,222 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:49,233 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:50,246 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:51,265 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 14:55:52,278 - task_a.py[line:198] - DEBUG: 当前模式：intervene
+2021-01-21 14:55:52,359 - siemens_task.py[line:133] - DEBUG: {"requestId":"e5eca51c-1c69-4336-b95c-a035d756a335","result":{"data":"resume sub task success"}}
+2021-01-21 14:56:03,372 - task_a.py[line:210] - DEBUG: 当前模式：finished
+2021-01-21 14:56:04,430 - task_a.py[line:220] - DEBUG: 当前模式：finished
+2021-01-21 14:56:05,489 - task_a.py[line:230] - DEBUG: 当前模式：processing
+2021-01-21 14:56:05,550 - siemens_task.py[line:127] - DEBUG: 提前到达结果{"requestId":"1887e1a9-986c-4cfd-bf50-14b4eb6f5456","result":{"data":"finish job success"}}
+2021-01-21 14:56:06,562 - task_a.py[line:241] - DEBUG: 当前模式：finished
+2021-01-21 14:56:07,627 - task_a.py[line:251] - DEBUG: 当前模式：processing
+2021-01-21 14:56:08,639 - task_a.py[line:251] - DEBUG: 当前模式：processing
+2021-01-21 14:56:09,650 - task_a.py[line:251] - DEBUG: 当前模式：processing
+2021-01-21 14:56:10,662 - task_a.py[line:251] - DEBUG: 当前模式：processing
+2021-01-21 14:56:11,672 - task_a.py[line:251] - DEBUG: 当前模式：processing
+2021-01-21 14:56:12,684 - task_a.py[line:251] - DEBUG: 当前模式：processing
+2021-01-21 14:56:13,698 - task_a.py[line:251] - DEBUG: 当前模式：processing
+2021-01-21 14:56:14,715 - task_a.py[line:251] - DEBUG: 当前模式：finished
+2021-01-21 14:56:15,772 - task_a.py[line:261] - DEBUG: 当前模式：processing
+2021-01-21 14:56:16,790 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:17,806 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:18,817 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:19,829 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:20,839 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:21,852 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:22,866 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:23,877 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:24,888 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:25,900 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:26,911 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:27,924 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:28,937 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:29,949 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:30,961 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:31,976 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:32,989 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:34,000 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:35,012 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:36,024 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:37,034 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:38,045 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:39,057 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:40,069 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:41,079 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:42,093 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:43,105 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:44,117 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:45,128 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:46,140 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:47,151 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:48,166 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:49,176 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:50,187 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:51,198 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:52,210 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:53,224 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:54,247 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:55,259 - task_a.py[line:261] - DEBUG: 当前模式：intervene
+2021-01-21 14:56:56,275 - task_a.py[line:261] - DEBUG: 当前模式：finished
+2021-01-21 14:57:06,403 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参：BY20210121003214
+2021-01-21 14:57:06,469 - siemens_task.py[line:105] - DEBUG: 查询任务状态结果:完成
+2021-01-21 14:57:06,563 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150102","originNo":20210121145706,"detailList":[{"stationName":"装载点2-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点2-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-21 14:57:06,695 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210121003215'}}
+2021-01-21 14:57:06,695 - siemens_task.py[line:100] - DEBUG: 反射:BY20210121003215
+2021-01-21 14:57:06,746 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参：BY20210121003215
+2021-01-21 14:57:06,805 - siemens_task.py[line:105] - DEBUG: 查询任务状态结果:创建
+2021-01-21 14:57:11,867 - task_b.py[line:33] - DEBUG: 当前模式：processing
+2021-01-21 14:57:11,880 - task_b.py[line:35] - DEBUG: 导航中
+2021-01-21 14:57:11,952 - siemens_task.py[line:127] - DEBUG: 提前到达结果{"requestId":"4a7281a8-1875-48db-87b4-c2a3c93bbecb","result":{"data":"finish job success"}}
+2021-01-21 14:57:11,952 - task_b.py[line:42] - ERROR: {'requestId': '4a7281a8-1875-48db-87b4-c2a3c93bbecb', 'result': {'data': 'finish job success'}}
+2021-01-21 14:57:22,966 - task_b.py[line:46] - DEBUG: 当前模式：finished
+2021-01-21 14:57:22,976 - task_b.py[line:48] - DEBUG: 到达装载点
+2021-01-21 14:57:24,034 - task_b.py[line:56] - DEBUG: 当前模式：processing
+2021-01-21 14:57:24,047 - task_b.py[line:58] - DEBUG: docking中
+2021-01-21 14:57:25,110 - task_b.py[line:67] - DEBUG: 当前模式：processing
+2021-01-21 14:57:26,122 - task_b.py[line:67] - DEBUG: 当前模式：processing
+2021-01-21 14:57:27,133 - task_b.py[line:67] - DEBUG: 当前模式：processing
+2021-01-21 14:57:28,143 - task_b.py[line:67] - DEBUG: 当前模式：processing
+2021-01-21 14:57:29,154 - task_b.py[line:67] - DEBUG: 当前模式：processing
+2021-01-21 14:57:30,167 - task_b.py[line:67] - DEBUG: 当前模式：processing
+2021-01-21 14:57:31,181 - task_b.py[line:67] - DEBUG: 当前模式：processing
+2021-01-21 14:57:32,194 - task_b.py[line:67] - DEBUG: 当前模式：processing
+2021-01-21 14:57:33,207 - task_b.py[line:67] - DEBUG: 当前模式：processing
+2021-01-21 14:57:34,217 - task_b.py[line:67] - DEBUG: 当前模式：processing
+2021-01-21 14:57:35,229 - task_b.py[line:67] - DEBUG: 当前模式：processing
+2021-01-21 14:57:36,240 - task_b.py[line:67] - DEBUG: 当前模式：intervene
+2021-01-21 14:57:36,241 - task_b.py[line:69] - DEBUG: docking中
+2021-01-21 14:57:36,326 - siemens_task.py[line:133] - DEBUG: {"requestId":"13b7ed58-4532-46f2-aaff-12669004729d","result":{"data":"resume sub task success"}}
+2021-01-21 14:57:36,326 - task_b.py[line:76] - ERROR: {'requestId': '13b7ed58-4532-46f2-aaff-12669004729d', 'result': {'data': 'resume sub task success'}}
+2021-01-21 14:57:37,344 - task_b.py[line:80] - DEBUG: 当前模式：processing
+2021-01-21 14:57:38,359 - task_b.py[line:80] - DEBUG: 当前模式：processing
+2021-01-21 14:57:39,371 - task_b.py[line:80] - DEBUG: 当前模式：processing
+2021-01-21 14:57:40,398 - task_b.py[line:80] - DEBUG: 当前模式：processing
+2021-01-21 14:57:41,409 - task_b.py[line:80] - DEBUG: 当前模式：processing
+2021-01-21 14:57:42,420 - task_b.py[line:80] - DEBUG: 当前模式：processing
+2021-01-21 14:57:43,430 - task_b.py[line:80] - DEBUG: 当前模式：processing
+2021-01-21 14:57:44,443 - task_b.py[line:80] - DEBUG: 当前模式：finished
+2021-01-21 14:57:45,498 - task_b.py[line:90] - DEBUG: 当前模式：finished
+2021-01-21 14:57:46,557 - task_b.py[line:100] - DEBUG: 当前模式：processing
+2021-01-21 14:57:46,619 - siemens_task.py[line:127] - DEBUG: 提前到达结果{"requestId":"756af517-fcd8-4172-b4ab-fd0feb4d3de1","result":{"data":"finish job success"}}
+2021-01-21 14:57:57,633 - task_b.py[line:111] - DEBUG: 当前模式：finished
+2021-01-21 14:57:58,727 - task_b.py[line:121] - DEBUG: 当前模式：finished
+2021-01-21 14:57:59,786 - task_b.py[line:131] - DEBUG: 当前模式：processing
+2021-01-21 14:58:00,797 - task_b.py[line:131] - DEBUG: 当前模式：processing
+2021-01-21 14:58:01,808 - task_b.py[line:131] - DEBUG: 当前模式：processing
+2021-01-21 14:58:02,822 - task_b.py[line:131] - DEBUG: 当前模式：processing
+2021-01-21 14:58:03,832 - task_b.py[line:131] - DEBUG: 当前模式：processing
+2021-01-21 14:58:04,843 - task_b.py[line:131] - DEBUG: 当前模式：processing
+2021-01-21 14:58:05,854 - task_b.py[line:131] - DEBUG: 当前模式：processing
+2021-01-21 14:58:06,867 - task_b.py[line:131] - DEBUG: 当前模式：processing
+2021-01-21 14:58:07,877 - task_b.py[line:131] - DEBUG: 当前模式：processing
+2021-01-21 14:58:08,887 - task_b.py[line:131] - DEBUG: 当前模式：processing
+2021-01-21 14:58:09,899 - task_b.py[line:131] - DEBUG: 当前模式：processing
+2021-01-21 14:58:10,908 - task_b.py[line:131] - DEBUG: 当前模式：finished
+2021-01-21 14:58:24,027 - siemens_task.py[line:111] - DEBUG: [6240, 3355]
+2021-01-21 14:58:24,027 - siemens_task.py[line:115] - DEBUG: {"detailList":[{"taskDetailId":"6240"}],"stationName":"西门子自动卸载点-001","taskId":"3355"}
+2021-01-21 14:58:24,142 - siemens_task.py[line:121] - DEBUG: {"status":{"statusCode":0,"systemCode":102,"statusReason":""},"result":true}
+2021-01-21 14:58:25,194 - task_b.py[line:163] - DEBUG: 当前模式：processing
+2021-01-21 14:58:30,259 - siemens_task.py[line:127] - DEBUG: 提前到达结果{"requestId":"62bb5ae1-592d-4234-af15-18397cb0dbf4","result":{"data":"finish job success"}}
+2021-01-21 14:58:30,259 - task_b.py[line:172] - ERROR: {'requestId': '62bb5ae1-592d-4234-af15-18397cb0dbf4', 'result': {'data': 'finish job success'}}
+2021-01-21 14:58:31,272 - task_b.py[line:176] - DEBUG: 当前模式：finished
+2021-01-21 14:58:32,333 - task_b.py[line:186] - DEBUG: 当前模式：processing
+2021-01-21 14:58:33,400 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:34,412 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:35,424 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:36,436 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:37,446 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:38,464 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:39,476 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:40,488 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:41,498 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:42,509 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:43,520 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:44,533 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:45,543 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:46,560 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:47,572 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:48,586 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:49,597 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:50,609 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:51,621 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:52,632 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:53,643 - task_b.py[line:196] - DEBUG: 当前模式：processing
+2021-01-21 14:58:54,656 - task_b.py[line:196] - DEBUG: 当前模式：intervene
+2021-01-21 14:58:54,727 - siemens_task.py[line:133] - DEBUG: {"requestId":"1cd70fb5-f3e8-405b-88b0-5a8e7239ec99","result":{"data":"resume sub task success"}}
+2021-01-21 14:59:05,740 - task_b.py[line:208] - DEBUG: 当前模式：finished
+2021-01-21 14:59:06,807 - task_b.py[line:218] - DEBUG: 当前模式：finished
+2021-01-21 14:59:07,870 - task_b.py[line:228] - DEBUG: 当前模式：processing
+2021-01-21 14:59:07,949 - siemens_task.py[line:127] - DEBUG: 提前到达结果{"requestId":"9e425e41-7de2-4758-88e1-1c57c9133495","result":{"data":"finish job success"}}
+2021-01-21 14:59:08,963 - task_b.py[line:239] - DEBUG: 当前模式：finished
+2021-01-21 14:59:10,017 - task_b.py[line:249] - DEBUG: 当前模式：processing
+2021-01-21 14:59:11,030 - task_b.py[line:249] - DEBUG: 当前模式：processing
+2021-01-21 14:59:12,040 - task_b.py[line:249] - DEBUG: 当前模式：processing
+2021-01-21 14:59:13,049 - task_b.py[line:249] - DEBUG: 当前模式：processing
+2021-01-21 14:59:14,060 - task_b.py[line:249] - DEBUG: 当前模式：processing
+2021-01-21 14:59:15,070 - task_b.py[line:249] - DEBUG: 当前模式：processing
+2021-01-21 14:59:16,085 - task_b.py[line:249] - DEBUG: 当前模式：finished
+2021-01-21 14:59:17,143 - task_b.py[line:259] - DEBUG: 当前模式：processing
+2021-01-21 14:59:18,154 - task_b.py[line:259] - DEBUG: 当前模式：processing
+2021-01-21 14:59:19,166 - task_b.py[line:259] - DEBUG: 当前模式：processing
+2021-01-21 14:59:20,178 - task_b.py[line:259] - DEBUG: 当前模式：finished
+2021-01-21 14:59:30,323 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参：BY20210121003215
+2021-01-21 14:59:30,392 - siemens_task.py[line:105] - DEBUG: 查询任务状态结果:完成
+2021-01-21 14:59:30,486 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150103","originNo":20210121145930,"detailList":[{"stationName":"装载点3-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点3-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-21 14:59:30,633 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210121003216'}}
+2021-01-21 14:59:30,633 - siemens_task.py[line:100] - DEBUG: 反射:BY20210121003216
+2021-01-21 14:59:30,686 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参：BY20210121003216
+2021-01-21 14:59:30,755 - siemens_task.py[line:105] - DEBUG: 查询任务状态结果:创建
+2021-01-21 14:59:35,813 - task_c.py[line:35] - DEBUG: 当前模式：pending
+2021-01-21 14:59:40,837 - task_c.py[line:35] - DEBUG: 当前模式：processing
+2021-01-21 14:59:40,849 - task_c.py[line:37] - DEBUG: 导航中
+2021-01-21 14:59:40,940 - siemens_task.py[line:127] - DEBUG: 提前到达结果{"requestId":"0e2e8a18-66ef-4ed9-82a5-aae6c019be1f","result":{"data":"finish job success"}}
+2021-01-21 14:59:40,941 - task_c.py[line:44] - ERROR: {'requestId': '0e2e8a18-66ef-4ed9-82a5-aae6c019be1f', 'result': {'data': 'finish job success'}}
+2021-01-21 14:59:51,956 - task_c.py[line:48] - DEBUG: 当前模式：finished
+2021-01-21 14:59:51,966 - task_c.py[line:50] - DEBUG: 到达装载点
+2021-01-21 14:59:53,025 - task_c.py[line:58] - DEBUG: 当前模式：processing
+2021-01-21 14:59:53,038 - task_c.py[line:60] - DEBUG: docking中
+2021-01-21 14:59:54,095 - task_c.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 14:59:55,111 - task_c.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 14:59:56,123 - task_c.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 14:59:57,135 - task_c.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 14:59:58,153 - task_c.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 14:59:59,168 - task_c.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:00:00,178 - task_c.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:00:01,190 - task_c.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:00:02,202 - task_c.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:00:03,213 - task_c.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:00:04,225 - task_c.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:00:05,235 - task_c.py[line:69] - DEBUG: 当前模式：intervene
+2021-01-21 15:00:05,236 - task_c.py[line:71] - DEBUG: docking中
+2021-01-21 15:00:05,307 - siemens_task.py[line:133] - DEBUG: {"requestId":"13d2023b-1103-4adf-828b-59f76736b0a2","result":{"data":"resume sub task success"}}
+2021-01-21 15:00:05,307 - task_c.py[line:78] - ERROR: {'requestId': '13d2023b-1103-4adf-828b-59f76736b0a2', 'result': {'data': 'resume sub task success'}}
+2021-01-21 15:00:06,334 - task_c.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:00:07,348 - task_c.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:00:08,359 - task_c.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:00:09,371 - task_c.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:00:10,383 - task_c.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:00:11,397 - task_c.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:00:12,409 - task_c.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:00:13,420 - task_c.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:00:14,430 - task_c.py[line:82] - DEBUG: 当前模式：finished
+2021-01-21 15:00:15,507 - task_c.py[line:92] - DEBUG: 当前模式：finished
+2021-01-21 15:00:16,578 - task_c.py[line:102] - DEBUG: 当前模式：processing
+2021-01-21 15:00:16,645 - siemens_task.py[line:127] - DEBUG: 提前到达结果{"requestId":"cd1bd09b-d755-4bdf-ac4c-b4cbbe42c949","result":{"data":"finish job success"}}
+2021-01-21 15:00:27,656 - task_c.py[line:113] - DEBUG: 当前模式：finished
+2021-01-21 15:00:28,723 - task_c.py[line:123] - DEBUG: 当前模式：finished
+2021-01-21 15:00:29,777 - task_c.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:00:30,803 - task_c.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:00:31,816 - task_c.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:00:32,827 - task_c.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:00:33,839 - task_c.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:00:34,851 - task_c.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:00:35,861 - task_c.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:00:36,871 - task_c.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:00:37,882 - task_c.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:00:38,897 - task_c.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:00:39,910 - task_c.py[line:133] - DEBUG: 当前模式：finished
+2021-01-21 15:00:39,967 - task_c.py[line:150] - DEBUG: processing
+2021-01-21 15:00:50,027 - siemens_task.py[line:111] - DEBUG: [6244, 3356]
+2021-01-21 15:00:50,027 - siemens_task.py[line:115] - DEBUG: {"detailList":[{"taskDetailId":"6244"}],"stationName":"西门子自动卸载点-001","taskId":"3356"}
+2021-01-21 15:00:53,128 - siemens_task.py[line:121] - DEBUG: {"status":{"statusCode":0,"systemCode":102,"statusReason":""},"result":true}
+2021-01-21 15:00:53,129 - task_c.py[line:154] - DEBUG: {'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': True}
+2021-01-21 15:00:54,185 - task_c.py[line:166] - DEBUG: 当前模式：processing
+2021-01-21 15:00:59,258 - siemens_task.py[line:127] - DEBUG: 提前到达结果{"requestId":"2ebe0ed5-bdaf-4551-819e-36e601c95ed6","result":{"data":"finish job success"}}
+2021-01-21 15:00:59,258 - task_c.py[line:175] - ERROR: {'requestId': '2ebe0ed5-bdaf-4551-819e-36e601c95ed6', 'result': {'data': 'finish job success'}}
+2021-01-21 15:01:00,273 - task_c.py[line:179] - DEBUG: 当前模式：finished
+2021-01-21 15:01:01,350 - task_c.py[line:189] - DEBUG: 当前模式：processing
+2021-01-21 15:01:02,403 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:03,420 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:04,466 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:05,478 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:06,488 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:07,503 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:08,513 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:09,523 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:10,533 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:11,548 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:12,559 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:13,571 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:14,585 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:15,598 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:16,611 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:17,623 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:18,635 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:19,653 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:20,670 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:21,684 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:22,697 - task_c.py[line:199] - DEBUG: 当前模式：processing
+2021-01-21 15:01:23,710 - task_c.py[line:199] - DEBUG: 当前模式：intervene
+2021-01-21 15:01:23,790 - siemens_task.py[line:133] - DEBUG: {"requestId":"af74b146-f300-4566-a1da-84e4cc02ff88","result":{"data":"resume sub task success"}}
+2021-01-21 15:01:34,805 - task_c.py[line:211] - DEBUG: 当前模式：finished
+2021-01-21 15:01:35,861 - task_c.py[line:221] - DEBUG: 当前模式：finished
+2021-01-21 15:01:36,933 - task_c.py[line:231] - DEBUG: 当前模式：processing
+2021-01-21 15:01:37,006 - siemens_task.py[line:127] - DEBUG: 提前到达结果{"requestId":"1672b041-5db9-4697-bc63-090231a94c5b","result":{"data":"finish job success"}}
+2021-01-21 15:01:38,017 - task_c.py[line:242] - DEBUG: 当前模式：finished
+2021-01-21 15:01:39,069 - task_c.py[line:252] - DEBUG: 当前模式：processing
+2021-01-21 15:01:40,080 - task_c.py[line:252] - DEBUG: 当前模式：processing
+2021-01-21 15:01:41,095 - task_c.py[line:252] - DEBUG: 当前模式：processing
+2021-01-21 15:01:42,107 - task_c.py[line:252] - DEBUG: 当前模式：processing
+2021-01-21 15:01:43,122 - task_c.py[line:252] - DEBUG: 当前模式：processing
+2021-01-21 15:01:44,135 - task_c.py[line:252] - DEBUG: 当前模式：processing
+2021-01-21 15:01:45,146 - task_c.py[line:252] - DEBUG: 当前模式：finished
+2021-01-21 15:01:46,202 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:01:47,214 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:01:48,226 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:01:49,242 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:01:50,253 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:01:51,265 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:01:52,278 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:01:53,291 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:01:54,325 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:01:55,336 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:01:56,347 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:01:57,357 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:01:58,370 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:01:59,381 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:02:00,395 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:02:01,407 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:02:02,420 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:02:03,431 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:02:04,443 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:02:05,456 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:02:06,466 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:02:07,477 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:02:08,490 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:02:09,503 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:02:10,514 - task_c.py[line:262] - DEBUG: 当前模式：processing
+2021-01-21 15:02:11,530 - task_c.py[line:262] - DEBUG: 当前模式：finished
+2021-01-21 15:02:21,629 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参：BY20210121003216
+2021-01-21 15:02:21,703 - siemens_task.py[line:105] - DEBUG: 查询任务状态结果:完成
+2021-01-21 15:02:21,793 - siemens_task.py[line:85] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150104","originNo":20210121150221,"detailList":[{"stationName":"返回流程装载点-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"返回流程卸载点-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-21 15:02:21,894 - siemens_task.py[line:98] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210121003217'}}
+2021-01-21 15:02:21,894 - siemens_task.py[line:100] - DEBUG: 反射:BY20210121003217
+2021-01-21 15:02:22,936 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参：BY20210121003217
+2021-01-21 15:02:22,992 - siemens_task.py[line:105] - DEBUG: 查询任务状态结果:创建
+2021-01-21 15:02:26,157 - siemens_task.py[line:127] - DEBUG: 提前到达结果{"requestId":"c3e181fa-3361-41b5-a9f2-33647c7e5b27","result":{"data":"finish job success"}}
+2021-01-21 15:02:51,545 - siemens_task.py[line:133] - DEBUG: {"requestId":"f9216df8-ae3a-4cfe-9300-f14c58c3c233","result":{"data":"resume sub task success"}}
+2021-01-21 15:02:59,714 - siemens_task.py[line:133] - DEBUG: {"requestId":"0ee32eea-3ace-4b0c-a837-b2aff3c1bada","error":{"code":500,"message":"not in intervene mode","status":"INTERNAL_ERROR"}}
+2021-01-21 15:03:00,798 - siemens_task.py[line:133] - DEBUG: {"requestId":"f6025bc5-4d3d-463f-bc0f-a8f007f67880","error":{"code":500,"message":"not in intervene mode","status":"INTERNAL_ERROR"}}
+2021-01-21 15:03:05,881 - siemens_task.py[line:127] - DEBUG: 提前到达结果{"requestId":"ea385451-ed05-4bfa-a6d1-889ddf59eb80","result":{"data":"finish job success"}}
+2021-01-21 15:03:06,915 - siemens_task.py[line:133] - DEBUG: {"requestId":"d515d6c8-76a7-4fcb-8549-e6ee6aca14a5","error":{"code":500,"message":"not in intervene mode","status":"INTERNAL_ERROR"}}
+2021-01-21 15:03:14,093 - siemens_task.py[line:133] - DEBUG: {"requestId":"eff56574-f30f-48ea-8637-100db048c7b4","error":{"code":500,"message":"not in intervene mode","status":"INTERNAL_ERROR"}}
+2021-01-21 15:03:15,201 - siemens_task.py[line:133] - DEBUG: {"requestId":"238e9090-06fa-4fda-aec7-ec764c63fd01","error":{"code":500,"message":"not in intervene mode","status":"INTERNAL_ERROR"}}
+2021-01-21 15:03:21,442 - siemens_task.py[line:133] - DEBUG: {"requestId":"ca4b9ee3-7f34-4083-ab8b-703bdd90f9da","error":{"code":500,"message":"job manager empty","status":"INTERNAL_ERROR"}}
+2021-01-21 15:03:51,532 - siemens_task.py[line:92] - DEBUG: 查询任务状态入参：BY20210121003217
+2021-01-21 15:03:51,615 - siemens_task.py[line:105] - DEBUG: 查询任务状态结果:完成
+2021-01-21 15:22:31,845 - siemens_task.py[line:84] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210121152231,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-21 15:22:31,972 - siemens_task.py[line:97] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210121003218'}}
+2021-01-21 15:22:31,972 - siemens_task.py[line:99] - DEBUG: 反射:BY20210121003218
+2021-01-21 15:22:32,016 - siemens_task.py[line:91] - DEBUG: 查询任务状态入参：BY20210121003218
+2021-01-21 15:22:32,078 - siemens_task.py[line:104] - DEBUG: 查询任务状态结果:创建
+2021-01-21 15:22:37,133 - task_a.py[line:35] - DEBUG: 当前模式：pending
+2021-01-21 15:22:42,164 - task_a.py[line:35] - DEBUG: 当前模式：processing
+2021-01-21 15:22:42,175 - task_a.py[line:37] - DEBUG: 导航中
+2021-01-21 15:22:42,278 - siemens_task.py[line:126] - DEBUG: 提前到达结果{"requestId":"7fc46586-3c0a-46d7-a475-1fa138b6ba5e","result":{"data":"finish job success"}}
+2021-01-21 15:22:42,279 - task_a.py[line:44] - ERROR: {'requestId': '7fc46586-3c0a-46d7-a475-1fa138b6ba5e', 'result': {'data': 'finish job success'}}
+2021-01-21 15:22:53,289 - task_a.py[line:48] - DEBUG: 当前模式：finished
+2021-01-21 15:22:53,299 - task_a.py[line:50] - DEBUG: 到达装载点
+2021-01-21 15:22:54,374 - task_a.py[line:58] - DEBUG: 当前模式：processing
+2021-01-21 15:22:54,385 - task_a.py[line:60] - DEBUG: docking中
+2021-01-21 15:22:55,459 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:22:56,484 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:22:57,497 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:22:58,507 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:22:59,519 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:23:00,530 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:23:01,543 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:23:02,582 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:23:03,593 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:23:04,603 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:23:05,614 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:23:06,625 - task_a.py[line:69] - DEBUG: 当前模式：intervene
+2021-01-21 15:23:06,625 - task_a.py[line:71] - DEBUG: docking中
+2021-01-21 15:23:06,696 - siemens_task.py[line:132] - DEBUG: {"requestId":"d6e379ce-83f4-4323-86a4-38554c128fdc","result":{"data":"resume sub task success"}}
+2021-01-21 15:23:06,696 - task_a.py[line:78] - ERROR: {'requestId': 'd6e379ce-83f4-4323-86a4-38554c128fdc', 'result': {'data': 'resume sub task success'}}
+2021-01-21 15:23:07,708 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:23:08,718 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:23:09,732 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:23:10,742 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:23:11,753 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:23:12,763 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:23:13,777 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:23:14,787 - task_a.py[line:82] - DEBUG: 当前模式：finished
+2021-01-21 15:23:15,845 - task_a.py[line:92] - DEBUG: 当前模式：finished
+2021-01-21 15:23:16,908 - task_a.py[line:102] - DEBUG: 当前模式：processing
+2021-01-21 15:23:16,986 - siemens_task.py[line:126] - DEBUG: 提前到达结果{"requestId":"d025c893-3609-4d2d-8625-562f2f012247","result":{"data":"finish job success"}}
+2021-01-21 15:23:27,996 - task_a.py[line:113] - DEBUG: 当前模式：finished
+2021-01-21 15:23:29,065 - task_a.py[line:123] - DEBUG: 当前模式：finished
+2021-01-21 15:23:30,123 - task_a.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:23:31,135 - task_a.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:23:32,158 - task_a.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:23:33,169 - task_a.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:23:34,180 - task_a.py[line:133] - DEBUG: 当前模式：finished
+2021-01-21 15:23:37,327 - siemens_task.py[line:110] - DEBUG: [6250, 3358]
+2021-01-21 15:23:37,327 - siemens_task.py[line:114] - DEBUG: {"detailList":[{"taskDetailId":"6250"}],"stationName":"西门子自动卸载点-001","taskId":"3358"}
+2021-01-21 15:23:37,455 - siemens_task.py[line:120] - DEBUG: {"status":{"statusCode":0,"systemCode":102,"statusReason":""},"result":true}
+2021-01-21 15:23:38,517 - task_a.py[line:164] - DEBUG: 当前模式：processing
+2021-01-21 15:23:53,625 - siemens_task.py[line:126] - DEBUG: 提前到达结果{"requestId":"8087b4cd-692f-4222-9251-67df43f7f050","result":{"data":"finish job success"}}
+2021-01-21 15:23:53,626 - task_a.py[line:174] - ERROR: {'requestId': '8087b4cd-692f-4222-9251-67df43f7f050', 'result': {'data': 'finish job success'}}
+2021-01-21 15:23:54,643 - task_a.py[line:178] - DEBUG: 当前模式：finished
+2021-01-21 15:23:55,704 - task_a.py[line:188] - DEBUG: 当前模式：processing
+2021-01-21 15:23:56,760 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:23:57,773 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:23:58,786 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:23:59,797 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:24:00,808 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:24:01,821 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:24:02,833 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:24:03,844 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:24:04,855 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:05,866 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:06,876 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:07,891 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:08,902 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:09,914 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:10,929 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:11,941 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:12,952 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:13,963 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:14,974 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:15,984 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:16,993 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:18,007 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:19,017 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:20,029 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:21,041 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:22,053 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:23,066 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:24,078 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:25,094 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:26,108 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:27,118 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:28,129 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:29,140 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:30,153 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:31,167 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:32,178 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:33,198 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:34,215 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:35,227 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:36,241 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:37,253 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:38,265 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:39,288 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:40,300 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:41,311 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:42,322 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:43,335 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:44,349 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:45,362 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:46,376 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:47,387 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:48,397 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:49,407 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:50,417 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:51,428 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:52,442 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:53,453 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:54,464 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:55,477 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:56,490 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:57,502 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:58,513 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:24:59,525 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:00,540 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:01,554 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:02,566 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:03,577 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:04,589 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:05,601 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:06,612 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:07,623 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:08,635 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:09,645 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:10,661 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:11,672 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:12,684 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:13,696 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:14,709 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:15,721 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:16,734 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:17,746 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:18,763 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:19,777 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:20,792 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:21,803 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:22,814 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:23,827 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:24,837 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:25,849 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:26,862 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:27,875 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:28,889 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:29,901 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:30,915 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:31,925 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:32,936 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:33,946 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:34,959 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:36,088 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:37,111 - task_a.py[line:198] - DEBUG: 当前模式：finished
+2021-01-21 15:25:37,308 - siemens_task.py[line:132] - DEBUG: {"requestId":"505be6b1-edac-4023-806b-f6efb5c5569f","error":{"code":500,"message":"not in intervene mode","status":"INTERNAL_ERROR"}}
+2021-01-21 15:25:48,320 - task_a.py[line:210] - DEBUG: 当前模式：finished
+2021-01-21 15:25:49,381 - task_a.py[line:220] - DEBUG: 当前模式：finished
+2021-01-21 15:25:50,442 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:25:51,453 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:25:52,465 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:25:53,477 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:25:54,489 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:25:55,501 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:25:56,513 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:25:57,527 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:25:58,543 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:25:59,556 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:00,567 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:01,578 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:02,595 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:03,610 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:04,627 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:05,637 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:06,651 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:07,664 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:08,677 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:09,689 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:10,700 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:11,712 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:12,725 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:13,744 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:14,756 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:15,767 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:16,780 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:17,795 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:18,809 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:19,820 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:20,831 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:21,844 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:22,877 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:23,893 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:24,912 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:25,930 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:26,942 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:27,956 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:28,969 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:29,980 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:30,995 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:32,006 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:33,018 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:34,031 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:35,049 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:36,071 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:37,089 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:38,103 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:39,114 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:40,127 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:41,145 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:42,170 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:43,182 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:44,196 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:45,207 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:46,223 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:47,236 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:48,264 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:49,285 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:50,297 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:51,309 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:52,320 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:53,332 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:54,347 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:55,358 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:56,370 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:57,384 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:58,397 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:26:59,418 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:00,433 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:01,444 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:02,455 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:03,469 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:04,481 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:05,491 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:06,504 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:07,519 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:08,534 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:09,548 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:10,558 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:11,570 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:12,581 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:13,591 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:14,606 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:15,617 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:16,628 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:17,639 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:18,650 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:19,661 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:20,672 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:21,684 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:27:22,694 - task_a.py[line:230] - DEBUG: 当前模式：finished
+2021-01-21 15:28:56,823 - siemens_task.py[line:84] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":20210121152856,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-21 15:28:56,980 - siemens_task.py[line:97] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210121003219'}}
+2021-01-21 15:28:56,980 - siemens_task.py[line:99] - DEBUG: 反射:BY20210121003219
+2021-01-21 15:28:57,023 - siemens_task.py[line:91] - DEBUG: 查询任务状态入参：BY20210121003219
+2021-01-21 15:28:57,088 - siemens_task.py[line:104] - DEBUG: 查询任务状态结果:创建
+2021-01-21 15:29:02,143 - task_a.py[line:35] - DEBUG: 当前模式：processing
+2021-01-21 15:29:02,154 - task_a.py[line:37] - DEBUG: 导航中
+2021-01-21 15:29:02,226 - siemens_task.py[line:126] - DEBUG: 提前到达结果{"requestId":"581c9d23-ec68-4081-87fa-e59771b89f2b","result":{"data":"finish job success"}}
+2021-01-21 15:29:02,226 - task_a.py[line:44] - ERROR: {'requestId': '581c9d23-ec68-4081-87fa-e59771b89f2b', 'result': {'data': 'finish job success'}}
+2021-01-21 15:29:13,252 - task_a.py[line:48] - DEBUG: 当前模式：finished
+2021-01-21 15:29:13,264 - task_a.py[line:50] - DEBUG: 到达装载点
+2021-01-21 15:29:14,329 - task_a.py[line:58] - DEBUG: 当前模式：processing
+2021-01-21 15:29:14,344 - task_a.py[line:60] - DEBUG: docking中
+2021-01-21 15:29:15,406 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:29:16,423 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:29:17,436 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:29:18,449 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:29:19,460 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:29:20,474 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:29:21,494 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:29:22,508 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:29:23,521 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:29:24,531 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:29:25,547 - task_a.py[line:69] - DEBUG: 当前模式：processing
+2021-01-21 15:29:26,563 - task_a.py[line:69] - DEBUG: 当前模式：intervene
+2021-01-21 15:29:26,563 - task_a.py[line:71] - DEBUG: docking中
+2021-01-21 15:29:26,636 - siemens_task.py[line:132] - DEBUG: {"requestId":"9eefcd08-0699-4e62-9889-67e199d28a3d","result":{"data":"resume sub task success"}}
+2021-01-21 15:29:26,636 - task_a.py[line:78] - ERROR: {'requestId': '9eefcd08-0699-4e62-9889-67e199d28a3d', 'result': {'data': 'resume sub task success'}}
+2021-01-21 15:29:27,654 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:29:28,670 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:29:29,681 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:29:30,693 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:29:31,706 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:29:32,718 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:29:33,730 - task_a.py[line:82] - DEBUG: 当前模式：processing
+2021-01-21 15:29:34,742 - task_a.py[line:82] - DEBUG: 当前模式：finished
+2021-01-21 15:29:35,814 - task_a.py[line:92] - DEBUG: 当前模式：finished
+2021-01-21 15:29:36,888 - task_a.py[line:102] - DEBUG: 当前模式：processing
+2021-01-21 15:29:36,963 - siemens_task.py[line:126] - DEBUG: 提前到达结果{"requestId":"b8ac8187-42bc-493b-8056-d411747e26b6","result":{"data":"finish job success"}}
+2021-01-21 15:29:47,977 - task_a.py[line:113] - DEBUG: 当前模式：finished
+2021-01-21 15:29:49,059 - task_a.py[line:123] - DEBUG: 当前模式：finished
+2021-01-21 15:29:50,124 - task_a.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:29:51,135 - task_a.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:29:52,147 - task_a.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:29:53,158 - task_a.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:29:54,171 - task_a.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:29:55,184 - task_a.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:29:56,196 - task_a.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:29:57,208 - task_a.py[line:133] - DEBUG: 当前模式：processing
+2021-01-21 15:29:58,220 - task_a.py[line:133] - DEBUG: 当前模式：finished
+2021-01-21 15:30:01,367 - siemens_task.py[line:110] - DEBUG: [6254, 3359]
+2021-01-21 15:30:01,367 - siemens_task.py[line:114] - DEBUG: {"detailList":[{"taskDetailId":"6254"}],"stationName":"西门子自动卸载点-001","taskId":"3359"}
+2021-01-21 15:30:01,493 - siemens_task.py[line:120] - DEBUG: {"status":{"statusCode":0,"systemCode":102,"statusReason":""},"result":true}
+2021-01-21 15:30:02,552 - task_a.py[line:164] - DEBUG: 当前模式：processing
+2021-01-21 15:30:17,656 - siemens_task.py[line:126] - DEBUG: 提前到达结果{"requestId":"50de6bc4-26d9-4af4-8068-3747d1f45d33","result":{"data":"finish job success"}}
+2021-01-21 15:30:17,656 - task_a.py[line:174] - ERROR: {'requestId': '50de6bc4-26d9-4af4-8068-3747d1f45d33', 'result': {'data': 'finish job success'}}
+2021-01-21 15:30:18,668 - task_a.py[line:178] - DEBUG: 当前模式：finished
+2021-01-21 15:30:19,732 - task_a.py[line:188] - DEBUG: 当前模式：processing
+2021-01-21 15:30:20,793 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:30:21,806 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:30:22,818 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:30:23,829 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:30:24,842 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:30:25,853 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:30:26,869 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:30:27,882 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:30:28,895 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:30:29,904 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:30:30,915 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:30:31,926 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:30:32,939 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:30:33,949 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:30:34,962 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:30:35,985 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:30:36,996 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:30:38,011 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:30:39,030 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:30:40,047 - task_a.py[line:198] - DEBUG: 当前模式：processing
+2021-01-21 15:30:41,059 - task_a.py[line:198] - DEBUG: 当前模式：intervene
+2021-01-21 15:30:41,156 - siemens_task.py[line:132] - DEBUG: {"requestId":"21f2e564-f961-4392-b384-1910b6da4a05","result":{"data":"resume sub task success"}}
+2021-01-21 15:31:00,647 - siemens_task.py[line:84] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150104","originNo":20210121153100,"detailList":[{"stationName":"返回流程装载点-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"返回流程卸载点-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-21 15:31:00,758 - siemens_task.py[line:97] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210121003220'}}
+2021-01-21 15:31:00,758 - siemens_task.py[line:99] - DEBUG: 反射:BY20210121003220
+2021-01-21 15:31:01,827 - siemens_task.py[line:91] - DEBUG: 查询任务状态入参：BY20210121003220
+2021-01-21 15:31:01,894 - siemens_task.py[line:104] - DEBUG: 查询任务状态结果:创建
+2021-01-21 15:31:23,363 - siemens_task.py[line:126] - DEBUG: 提前到达结果{"requestId":"fc28b91c-d9be-49a7-bc7a-3cb2aab95e47","result":{"data":"finish job success"}}
+2021-01-21 15:31:56,825 - siemens_task.py[line:132] - DEBUG: {"requestId":"bd31280e-a8a7-4b0c-97da-7f36c6a6e0e3","result":{"data":"resume sub task success"}}
+2021-01-21 15:32:05,027 - siemens_task.py[line:132] - DEBUG: {"requestId":"38b36c59-3776-46a1-a091-eba5be0509af","error":{"code":500,"message":"not in intervene mode","status":"INTERNAL_ERROR"}}
+2021-01-21 15:32:06,123 - siemens_task.py[line:132] - DEBUG: {"requestId":"41acdfb7-1c18-4ffa-b525-74f2430bb187","error":{"code":500,"message":"not in intervene mode","status":"INTERNAL_ERROR"}}
+2021-01-21 15:32:11,194 - siemens_task.py[line:126] - DEBUG: 提前到达结果{"requestId":"dfa4052a-7f9d-49fd-af27-95f61d98cc43","result":{"data":"finish job success"}}
+2021-01-21 15:32:12,225 - siemens_task.py[line:132] - DEBUG: {"requestId":"8ccb2bf2-8e10-4887-918c-6f26bd82ebe8","error":{"code":500,"message":"not in intervene mode","status":"INTERNAL_ERROR"}}
+2021-01-21 15:32:19,419 - siemens_task.py[line:132] - DEBUG: {"requestId":"5ee4d59d-51a1-4751-b36d-e714b7f1e2f1","error":{"code":500,"message":"not in intervene mode","status":"INTERNAL_ERROR"}}
+2021-01-21 15:32:20,499 - siemens_task.py[line:132] - DEBUG: {"requestId":"5067d33b-5072-405d-a9e0-c84067b5357e","error":{"code":500,"message":"not in intervene mode","status":"INTERNAL_ERROR"}}
+2021-01-21 15:32:30,698 - siemens_task.py[line:132] - DEBUG: {"requestId":"5b78283f-3b5e-43a9-9209-f0fc17cf10da","error":{"code":500,"message":"job manager empty","status":"INTERNAL_ERROR"}}
+2021-01-21 15:33:00,792 - siemens_task.py[line:91] - DEBUG: 查询任务状态入参：BY20210121003220
+2021-01-21 15:33:00,859 - siemens_task.py[line:104] - DEBUG: 查询任务状态结果:完成
+2021-01-21 15:35:21,823 - siemens_task.py[line:84] - DEBUG: pda下单参数:{"customerCode":"1015","workSpaceCode":"01","originType":"10150104","originNo":20210121153521,"detailList":[{"stationName":"返回流程装载点-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"返回流程卸载点-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+2021-01-21 15:35:21,942 - siemens_task.py[line:97] - DEBUG: 返回值：{'status': {'statusCode': 0, 'systemCode': 102, 'statusReason': ''}, 'result': {'transportNo': 'BY20210121003221'}}
+2021-01-21 15:35:21,942 - siemens_task.py[line:99] - DEBUG: 反射:BY20210121003221
+2021-01-21 15:35:22,987 - siemens_task.py[line:91] - DEBUG: 查询任务状态入参：BY20210121003221
+2021-01-21 15:35:23,058 - siemens_task.py[line:104] - DEBUG: 查询任务状态结果:创建
+2021-01-21 15:37:04,543 - siemens_task.py[line:126] - DEBUG: 提前到达结果{"requestId":"a0f1e297-fd6d-4d96-a204-50ac14cd251f","error":{"code":403,"message":"job manager empty","status":"FORBIDDEN"}}

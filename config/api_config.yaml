@@ -1,0 +1,52 @@
+
+#pda_headers:
+#  workSpaceId: '2001'
+#  workSpaceCode: '01'
+#  Content-Type: application/json;charset=UTF-8
+#  userId: '2001'
+#  token: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MTA1MzYxNzMsImp0aSI6InB2dTIwNjh5WDMwWFlqamlRTUpnVWciLCJpYXQiOjE2MTA1MTgxNzMsInVzZXIiOiJ7XCJpZFwiOjIwMDEsXCJ1c2VyTmFtZVwiOlwieG16X2FkbWluXCIsXCJyZWFsTmFtZVwiOlwieG16X2FkbWluXCIsXCJjdXN0b21lcklkXCI6NzksXCJjdXN0b21lckNvZGVcIjpcIjEwMTVcIixcInVzZXJFeHRJbmZvQm9MaXN0XCI6W3tcImlkXCI6MjAwMSxcInVzZXJJZFwiOjIwMDEsXCJjdXN0b21lcklkXCI6NzksXCJjdXN0b21lckNvZGVcIjpcIjEwMTVcIixcImN1c3RvbWVyTmFtZVwiOlwi6KW_6Zeo5a2QXCIsXCJ3b3JrU3BhY2VJZFwiOjIwMDEsXCJ3b3JrU3BhY2VOYW1lXCI6XCLopb_pl6jlrZAwMDFcIixcIndvcmtTcGFjZUNvZGVcIjpcIjAxXCJ9XSxcInJvbGVJZFwiOjIsXCJyb2xlTmFtZVwiOlwi5a6i5oi3566h55CG5ZGYXCIsXCJpc0luaXRQYXNzd29yZFwiOjEsXCJkZXZpY2VUeXBlXCI6M30ifQ.27cx4M3_h19ZKTfxVZVp964pLJGB7efGQRx67tdpEZA
+#  customerId: '79'
+#  deviceType: '3'
+
+
+
+#siemens:
+pda:
+  headers: {"workSpaceId": "2001","workSpaceCode": "01","userId": "2001","customerId": "79","deviceType": "3"}
+  url: 'http://gateway.siemens.test.internal.forwardx.com/base-server/auth/login'
+  data: '{"userName": "xmz_admin", "password": "64f19f650121e3b5a839694c237bd2f1"}'
+
+admin:
+  headers: {'Content-Length': '63','deviceType': '1','workSpaceCode': '01','userId': '2001','customerId': '79','workSpaceId': '2001'}
+  url: 'http://gateway.siemens.test.internal.forwardx.com/base-server/auth/login'
+  data: '{"userName": "xmz_admin", "password": "64f19f650121e3b5a839694c237bd2f1"}'
+
+fta:
+  {'workSpaceCode': '01','workSpaceId': '2001','customerId': '79','deviceType': '2'}
+
+
+url:
+  # 登录
+  login: 'http://gateway.siemens.test.internal.forwardx.com/base-server/auth/login'
+  # 创建任务
+  create: 'http://gateway.siemens.test.internal.forwardx.com/rpm-server/api/transport/create2'
+  # 查询任务状态（搬运中，完成）
+  page:  'http://gateway.siemens.test.internal.forwardx.com/rpm-server/transport/page'
+  # 提前到达
+  finish: 'http://10.3.0.119:7000/api/jobs/finish'
+  # 异常转人工
+  resume: 'http://10.3.0.119:7000/api/jobs/resume_sub_task'
+  # 是否带回空料架
+  rack: 'http://gateway.siemens.test.internal.forwardx.com/rpm-server/page/arrived/arriveReceiveStation/receiveMaterials'
+
+
+data:
+  login: '{"userName":"xmz_admin","password":"64f19f650121e3b5a839694c237bd2f1"}'
+  create:
+    a: '{"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":id,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}'
+    b: '{"customerCode":"1015","workSpaceCode":"01","originType":"10150102","originNo":id,"detailList":[{"stationName":"装载点2-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点2-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}'
+    c: '{"customerCode":"1015","workSpaceCode":"01","originType":"10150103","originNo":id,"detailList":[{"stationName":"装载点3-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点3-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}'
+    d: '{"customerCode":"1015","workSpaceCode":"01","originType":"10150104","originNo":id,"detailList":[{"stationName":"返回流程装载点-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"返回流程卸载点-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}'
+  page: '{"pageNumber":1,"pageSize":10,"transportNo":"BY"}'
+  rack: '{"detailList":[{"taskDetailId":"888"}],"stationName":"西门子自动卸载点-001","taskId":"AAA"}'
+
