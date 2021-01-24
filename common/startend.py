@@ -16,6 +16,7 @@ class Startend(unittest.TestCase):
 
     def setUpClass(cls) -> None:
         '''自动开始前置操作'''
+        
 
     def tearDownClass(cls) -> None:
         '''自动化完成操作'''
