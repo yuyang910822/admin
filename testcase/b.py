@@ -19,7 +19,7 @@
 #     testData = DoExcel(ExcelConfig.testDataPant, '创建任务')
 #
 #     @ddt.data(*testData.all())
-#     def test_create(self,data):
+#     def test_create(self,  ):
 #         """创建任务"""
 #         new_expect = data['expect']
 #         if "id" in data['request_json']:

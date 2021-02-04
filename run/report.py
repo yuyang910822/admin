@@ -20,9 +20,10 @@ def run():
     dir = '../testcase'
     report_dir = '../reports'
     now = time.strftime("%Y%m%d%H%M%S")
-    b = unittest.defaultTestLoader.discover(dir, pattern='test001*.py')
-    report_name = report_dir + '/' + now + 'Result.html'
-    with open(report_name, 'wb')as f:
+    b = unittest.defaultTestLoader.discover(dir, pattern='test001*.py') # 收集的测试集
+    report_name = report_dir + '/' + now + 'Result.html' #报告输出目录及文件名
+    with open(report_name, 'wb')as f: #打开文件
+        #
         runner = HTMLTestRunner.HTMLTestRunner(stream=f, verbosity=2,title='【西门子-PDA】--接口自动化报告，测试结果如下：',
                                                 description="运行环境 :PDA")
         # 执行测试用例文件

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 -------------------------------------------------
-  @Time : 2021/1/11 21:44 
+  @Time : 2021/1/11 21:44
   @Auth : 于洋
   @File : 字符串.py
   @IDE  : PyCharm
@@ -178,7 +178,10 @@ os.getcwd() 获取当前路径
 """
 
 
-
-import requests
-
-r = requests.post()
+class MyClass:
+    # 私有方法
+    _name = '1'
+    def _add(self):
+        print(self._name)
+a =MyClass()
+print(a._add())

@@ -28,7 +28,7 @@ def log():
     log.addHandler(handler)
     log.addHandler(f_handler)
 
-    # 设置人日志格式
+    # 设置日志格式
     # '%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s')'
     f = logging.Formatter('%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s')
     handler.setFormatter(f)
@@ -40,4 +40,31 @@ def log():
 
 if __name__ == '__main__':
     a = log()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
