@@ -6,16 +6,20 @@ class DoExcel():
     def __init__(self,file_name,sheet_name):
         self.f = file_name
         self.s = sheet_name
-
-    def open(self):
-        """打开工作薄，选择表单"""
         self.workbook = openpyxl.load_workbook(self.f)
         self.sheet = self.workbook[self.s]
-        return self.sheet
+
+
+    # def open(self):
+    #     """打开工作薄，选择表单"""
+    #     self.workbook = openpyxl.load_workbook(self.f)
+    #     self.sheet = self.workbook[self.s]
+    #     return self.sheet
 
     def close(self):
         """关闭工作薄对象，释放内存"""
         self.workbook.close()
+
 
     def firstline(self) -> list:
         '''首行信息'''
@@ -23,7 +27,7 @@ class DoExcel():
 
     def all(self) -> list:
         '''测试数据'''
-        self.open()
+        # self.sheet
         testdata = []
         maxrow = self.sheet.max_row
         if  maxrow <= 1:
@@ -50,7 +54,7 @@ class DoExcel():
 
 
     def result(self,data,new,v):
-        self.open()
+
         # 写入数据
         self.sheet.cell(data['id']+1,new,v)
         # 保存文件
@@ -104,11 +108,12 @@ if __name__ == '__main__':
 #
 #
 #
-# if __name__ == '__main__':
-#     a = DoExcel(r'C:\Users\yuyang\Desktop\clusterw20201030【长荣项目】--测试报告.xlsx','测试报告')
-#     b = a.all()
-#
-#
-#
-#
+if __name__ == '__main__':
+    import json
+    a = DoExcel(r'C:\Users\yuyang\Desktop\雅戈尔.xlsx','Sheet1')
+    b = a.all()
+    for i in b:
+        print(i)
+
+
 

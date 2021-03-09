@@ -1,10 +1,19 @@
 # -*- coding: utf-8 -*-
 """
 -------------------------------------------------
-  @Time : 2021/1/20 14:06 
+  @Time : 2021/2/16 22:02 
   @Auth : 于洋
-  @File : __init__.py.py
+  @File : conftest.py
   @IDE  : PyCharm
   @Motto: ABC(Always Be Coding)
 -------------------------------------------------
 """
+
+
+import pytest,time
+
+
+#
+@pytest.fixture()
+def timesleep():
+    time.sleep(2)

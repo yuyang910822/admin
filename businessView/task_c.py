@@ -9,8 +9,7 @@
 -------------------------------------------------
 """
 
-from common.settings import *
-from common.siemens_task import Task
+from common.basic_functions.seiemns_basic_functions import Task
 
 
 class Task_C(Task):
@@ -31,22 +30,22 @@ class Task_C(Task):
         '''导航前往装载点'''
         for i in range(1,101):
             time.sleep(5)
-            self.log.debug('当前模式：{}'.format(self.getstatus(self.transportNo, 1)))
+            self.logger.debug('当前模式：{}'.format(self.getstatus(self.transportNo, 1)))
             if self.getstatus(self.transportNo,1) == 'processing':
-                self.log.debug('导航中')
+                self.logger.debug('导航中')
                 return True
         return False
 
     def loading_one(self):
         '''到达装载点'''
         f = self.finish()
-        self.log.error(f)
+        self.logger.error(f)
         time.sleep(10)
         for i in range(1,101):
             time.sleep(1)
-            self.log.debug('当前模式：{}'.format(self.getstatus(self.transportNo, 1)))
+            self.logger.debug('当前模式：{}'.format(self.getstatus(self.transportNo, 1)))
             if self.getstatus(self.transportNo,1) == 'finished':
-                self.log.debug('到达装载点')
+                self.logger.debug('到达装载点')
                 return True
         return False
 
@@ -54,9 +53,9 @@ class Task_C(Task):
         '''检测料架'''
         for i in range(1,101):
             time.sleep(1)
-            self.log.debug('当前模式：{}'.format(self.getstatus(self.transportNo, 2)))
+            self.logger.debug('当前模式：{}'.format(self.getstatus(self.transportNo, 2)))
             if self.getstatus(self.transportNo,2) == 'processing':
-                self.log.debug('docking中')
+                self.logger.debug('docking中')
                 return True
         return False
 
@@ -65,20 +64,20 @@ class Task_C(Task):
         for i in range(1, 101):
             time.sleep(1)
             f =self.getstatus(self.transportNo, 2)
-            self.log.debug('当前模式：{}'.format(f))
+            self.logger.debug('当前模式：{}'.format(f))
             if f  == 'intervene':
-                self.log.debug('docking中')
+                self.logger.debug('docking中')
                 return True
         return False
 
     def abnormal_one(self):
         '''人工处理'''
         l = self.resume()
-        self.log.error(l)
+        self.logger.error(l)
         for i in range(1,101):
             time.sleep(1)
             f = self.getstatus(self.transportNo, 3)
-            self.log.debug('当前模式：{}'.format(f))
+            self.logger.debug('当前模式：{}'.format(f))
             if f == 'finished':
                 return True
         return False
@@ -88,7 +87,7 @@ class Task_C(Task):
         for i in range(1,101):
             time.sleep(1)
             f = self.getstatus(self.transportNo, 3)
-            self.log.debug('当前模式：{}'.format(f))
+            self.logger.debug('当前模式：{}'.format(f))
             if f == 'finished':
                 return True
         return False
@@ -98,7 +97,7 @@ class Task_C(Task):
         for i in range(1,101):
             time.sleep(1)
             f = self.getstatus(self.transportNo, 4)
-            self.log.debug('当前模式：{}'.format(f))
+            self.logger.debug('当前模式：{}'.format(f))
             if f == 'processing':
                 return True
         return False
@@ -109,7 +108,7 @@ class Task_C(Task):
         time.sleep(10)
         for i in range(1, 101):
             time.sleep(1)
-            self.log.debug('当前模式：{}'.format(self.getstatus(self.transportNo, 4)))
+            self.logger.debug('当前模式：{}'.format(self.getstatus(self.transportNo, 4)))
             if self.getstatus(self.transportNo, 4) == 'finished':
                 return True
         return False
@@ -119,7 +118,7 @@ class Task_C(Task):
         for i in range(1,101):
             time.sleep(1)
             f = self.getstatus(self.transportNo, 5)
-            self.log.debug('当前模式：{}'.format(f))
+            self.logger.debug('当前模式：{}'.format(f))
             if f == 'finished':
                 return True
         return False
@@ -129,13 +128,13 @@ class Task_C(Task):
         for i in range(1,101):
             time.sleep(1)
             f = self.getstatus(self.transportNo, 6)
-            self.log.debug('当前模式：{}'.format(f))
+            self.logger.debug('当前模式：{}'.format(f))
             if f == 'finished':
                 return True
         for i in range(1,101):
             time.sleep(1)
             f = self.getstatus(self.transportNo, 6)
-            self.log.debug('当前模式：{}'.format(f))
+            self.logger.debug('当前模式：{}'.format(f))
             if f == 'intervene':
                 self.resume()
                 time.sleep(10)
@@ -146,11 +145,11 @@ class Task_C(Task):
         '''带回空料架'''
         for i in range(1,101):
             f = self.getstatus(self.transportNo,7)
-            self.log.debug('{}'.format(f))
+            self.logger.debug('{}'.format(f))
             if f =='processing':
                 time.sleep(10)
                 ff = self.rackYes()
-                self.log.debug('{}'.format(ff))
+                self.logger.debug('{}'.format(ff))
                 return True
         return False
 
@@ -162,7 +161,7 @@ class Task_C(Task):
         for i in range(1,101):
             time.sleep(1)
             f = self.getstatus(self.transportNo, 9)
-            self.log.debug('当前模式：{}'.format(f))
+            self.logger.debug('当前模式：{}'.format(f))
             if f == 'processing':
                 return True
         return False
@@ -171,11 +170,11 @@ class Task_C(Task):
         '''到达空料架点'''
         time.sleep(5)
         f = self.finish()
-        self.log.error(f)
+        self.logger.error(f)
         for i in range(1,101):
             time.sleep(1)
             f = self.getstatus(self.transportNo, 9)
-            self.log.debug('当前模式：{}'.format(f))
+            self.logger.debug('当前模式：{}'.format(f))
             if f == 'finished':
                 return True
         return False
@@ -185,7 +184,7 @@ class Task_C(Task):
         for i in range(1,101):
             time.sleep(1)
             f = self.getstatus(self.transportNo, 10)
-            self.log.debug('当前模式：{}'.format(f))
+            self.logger.debug('当前模式：{}'.format(f))
             if f == 'processing':
                 return True
         return False
@@ -195,7 +194,7 @@ class Task_C(Task):
         for i in range(1, 101):
             time.sleep(1)
             f = self.getstatus(self.transportNo, 10)
-            self.log.debug('当前模式：{}'.format(f))
+            self.logger.debug('当前模式：{}'.format(f))
             if f == 'intervene':
                 return True
         return False
@@ -207,7 +206,7 @@ class Task_C(Task):
         for i in range(1, 101):
             time.sleep(1)
             f = self.getstatus(self.transportNo, 10)
-            self.log.debug('当前模式：{}'.format(f))
+            self.logger.debug('当前模式：{}'.format(f))
             if f == 'finished':
                 return True
         return False
@@ -217,7 +216,7 @@ class Task_C(Task):
         for i in range(1, 101):
             time.sleep(1)
             f = self.getstatus(self.transportNo, 11)
-            self.log.debug('当前模式：{}'.format(f))
+            self.logger.debug('当前模式：{}'.format(f))
             if f == 'finished':
                 return True
         return False
@@ -227,7 +226,7 @@ class Task_C(Task):
         for i in range(1, 101):
             time.sleep(1)
             f = self.getstatus(self.transportNo, 12)
-            self.log.debug('当前模式：{}'.format(f))
+            self.logger.debug('当前模式：{}'.format(f))
             if f == 'processing':
                 return True
         return False
@@ -238,7 +237,7 @@ class Task_C(Task):
         for i in range(1, 101):
             time.sleep(1)
             f = self.getstatus(self.transportNo, 12)
-            self.log.debug('当前模式：{}'.format(f))
+            self.logger.debug('当前模式：{}'.format(f))
             if f == 'finished':
                 return True
         return False
@@ -248,7 +247,7 @@ class Task_C(Task):
         for i in range(1, 101):
             time.sleep(1)
             f = self.getstatus(self.transportNo, 13)
-            self.log.debug('当前模式：{}'.format(f))
+            self.logger.debug('当前模式：{}'.format(f))
             if f == 'finished':
                 return True
         return False
@@ -258,13 +257,13 @@ class Task_C(Task):
         for i in range(1,101):
             time.sleep(1)
             f = self.getstatus(self.transportNo, 14)
-            self.log.debug('当前模式：{}'.format(f))
+            self.logger.debug('当前模式：{}'.format(f))
             if f == 'finished':
                 return True
         for i in range(1,101):
             time.sleep(1)
             ff = self.getstatus(self.transportNo, 14)
-            self.log.debug('当前模式：{}'.format(ff))
+            self.logger.debug('当前模式：{}'.format(ff))
             if ff == 'intervene':
                 self.resume()
                 time.sleep(10)

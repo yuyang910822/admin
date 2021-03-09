@@ -9,7 +9,7 @@
 -------------------------------------------------
 """
 import time
-from common.siemens_task import Task
+from common.basic_functions.seiemns_basic_functions import Task
 
 
 class Empty_rack_return(Task):
