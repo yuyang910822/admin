@@ -125,10 +125,11 @@ class Carry_ability():
     def task_status(self,k,v,i=-1):
         '''获取任务集指定k的v'''
 
-        for ll in range(1,100):
+        for ll in range(1,1000):
             # 任务状态集
             time.sleep(1)
             s = self.mysql.getstatus(self.transportNo)
+            self.log.error('{}'.format(s))
             #判断状态集k与下标的值是否满足预期
             if s[k][i] == v:
                 self.log.debug('满足状态条件:{}'.format(s[k][i]))
@@ -137,3 +138,17 @@ class Carry_ability():
 
         return False
 
+
+
+    def docking(self,k,i=-1):
+        for i in range(1,100):
+            time.sleep(1)
+            s = self.mysql.getstatus(self.transportNo)
+            if s == 'finished' or s == 'intervene':
+                self.log.info('docking状态{}'.format(s[k]))
+                if s[k] == 'finished':
+                    return True
+                elif s[k] == 'intervene':
+                    self.resume()
+                    return True
+        return False

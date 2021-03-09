@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 -------------------------------------------------
-  @Time : 2021/1/14 18:50 
+  @Time : 2021/1/14 18:50
   @Auth : 于洋
   @File : test_b.py
   @IDE  : PyCharm
@@ -52,7 +52,7 @@ class  Test_task_B():
     @allure.title('检测料架中')
     def test_docking_in_one(self):
         '''检测料架'''
-        s = self.bs.task_status(k=2, v='intervene')
+        s = self.bs.task_status(k=2, v='processing')
         assert s == True
         # self.bs.log.debug('是否检测料架中：{}'.format(s[2][-1]))
         # # 提前到达结果数据库同步慢，导致数据库状态更新，检测料架状态已以后，无法执行该用例
@@ -118,14 +118,22 @@ class  Test_task_B():
     def test_undocking(self):
         '''undocking'''
         self.bs.log.info('---undocking---')
-        s = self.bs.mysql.getstatus(self.bs.transportNo)
-        if s[6][-1] == 'finished' or s[6][-1] == 'intervene':
-            self.bs.log.debug('undocking状态：{}'.format(s[6][-1]))
-            if s[6][-1] == 'finished':
-                assert s[6][-1] == 'finished'
-            else:
-                assert s[6][-1] == 'intervene'
-                self.bs.resume()
+        s = self.bs.docking(k=6)
+        assert s == True
+        # for i in range(1,25):
+        #     time.sleep(1)
+        #     s = self.bs.mysql.getstatus(self.bs.transportNo)
+        #     if s[6][-1] == 'finished' or s[6][-1] == 'intervene':
+        #         self.bs.log.debug('undocking状态：{}'.format(s[6][-1]))
+        #         if s[6][-1] == 'finished':
+        #             assert s[6][-1] == 'finished'
+        #             break
+        #         else:
+        #             assert s[6][-1] == 'intervene'
+        #             self.bs.resume()
+        #             break
+        #     self.bs.log.info('undocking中，当前状态{}'.format(s[6]))
+        # return False
 
     @allure.title('带回空料架')
     def test_choice_rack(self):
@@ -133,12 +141,7 @@ class  Test_task_B():
         self.bs.log.info('---带回空料架---')
         f = self.bs.rack_task()
         assert f == True
-        # s = self.bs.task_status(k=2, v='intervene')
-        # self.bs.log.debug('带回空料架：{}'.format(s[7][-1]))
-        # time.sleep(10)
-        # f = self.bs.rack_task()
-        # self.bs.log.debug('带回空料架结果：{}'.format(f))
-        # assert s[7][-1] == 'finished'
+
 
     @allure.title('导航前往空料架点')
     def test_empty_rack(self):
@@ -230,14 +233,21 @@ class  Test_task_B():
     def test_undocking_empry(self):
         '''undocking'''
         self.bs.log.info('---undocking---')
-        s = self.bs.mysql.getstatus(self.bs.transportNo)
-        if s[14][-1] == 'finished' or s[14][-1] == 'intervene':
-            self.bs.log.debug('undocking：{}'.format(s[14][-1]))
-            if s[14][-1] == 'finished':
-                assert s[14][-1] == 'finished'
-            else:
-                assert s[14][-1] == 'intervene'
-                self.bs.resume()
+        s = self.bs.docking(k=14)
+        assert s == True
+        # s = self.bs.mysql.getstatus(self.bs.transportNo)
+        # for i in range(1,25):
+        #     self.bs.log.info('{}'.format('当前状态{}',s[14][-1]))
+        #     if s[14][-1] == 'finished' or s[14][-1] == 'intervene':
+        #         self.bs.log.debug('undocking：{}'.format(s[14][-1]))
+        #         if s[14][-1] == 'finished':
+        #             assert s[14][-1] == 'finished'
+        #             break
+        #         else:
+        #             assert s[14][-1] == 'intervene'
+        #             self.bs.resume()
+        #             break
+        #     self.bs.log.info('{}'.format('当前状态{}', s[14][-1]))
 
     @allure.title('任务完成')
     def test_finished(self):
