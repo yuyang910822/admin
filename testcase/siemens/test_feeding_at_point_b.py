@@ -23,6 +23,7 @@ class  Test_task_B():
                           testdatas=siemens_yaml)
 
 
+
     @allure.title('任务创建完成')
     # @allure.description('创建任务断言任务状态')
     def test_create(self):
