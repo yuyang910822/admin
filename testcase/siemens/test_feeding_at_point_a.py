@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
 """
 -------------------------------------------------
-  @Time : 2021/1/14 18:50
+  @Time : 2021/3/10 14:55 
   @Auth : 于洋
-  @File : test_b.py
+  @File : test_feeding_at_point_a.py
   @IDE  : PyCharm
   @Motto: ABC(Always Be Coding)
 -------------------------------------------------
 """
+# -*- coding: utf-8 -*-
+
 
 import allure,time,pytest
 from basics.carry import Carry_ability
@@ -29,7 +31,7 @@ class  Test_task_B():
     def test_create(self):
         '''创建任务'''
         self.bs.log.info('---创建任务---')
-        self.bs.create_task('task_b')
+        self.bs.create_task('task_a')
         assert self.bs.select_task_status() == '创建'
 
 

@@ -141,16 +141,20 @@ class Carry_ability():
 
 
     def docking(self,k,i=-1):
-        for i in range(1,100):
+        for ll in range(1,100):
             time.sleep(1)
             s = self.mysql.getstatus(self.transportNo)
-            if s == 'finished' or s == 'intervene':
-                self.log.info('docking状态{}'.format(s[k]))
-                if s[k] == 'finished':
+            self.log.debug('undocking:{}'.format(s))
+            if s[k][i] == 'finished' or s[k][i] == 'intervene':
+                self.log.info('docking状态{}'.format(s[k][i]))
+                if s[k][i] == 'finished':
                     return True
-                elif s[k] == 'intervene':
+                elif s[k][i] == 'intervene':
                     self.resume()
                     return True
+                elif s[k][i] == 'processing':
+                    time.sleep(3)
+                    self.finish()
         return False
 
 
