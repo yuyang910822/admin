@@ -45,13 +45,13 @@ class Carry_ability():
 
 
 
-    def create_task(self,task_type):
+    def create_task(self,taskname):
         '''下单'''
-        data = self.testdatas['create_task']
+        data = self.testdatas[taskname]
         data['headers']['token'] = self.get_pda_token()
-        data['json'][task_type]['originNo'] =time.strftime("%Y%m%d%H%M%S")
+        data['json']['originNo'] =time.strftime("%Y%m%d%H%M%S")
         self.log.info('pda下单参数:{}'.format(data))
-        r = requests.request('post', url=data['url'], headers=data['headers'],json=data['json'][task_type ])
+        r = requests.request('post', url=data['url'], headers=data['headers'],json=data['json'])
         self.log.info('返回值：{}'.format(r.json()))
         setattr(Carry_ability, 'transportNo', r.json()['result']['transportNo'])
         self.log.info('反射:{}'.format(self.transportNo))
@@ -152,3 +152,11 @@ class Carry_ability():
                     self.resume()
                     return True
         return False
+
+
+if __name__ == '__main__':
+    bs = Carry_ability(mysqlname='siemens_mysql',
+                       logname='siemens', logpath=logs_dir + r'\siemens.log',
+                       testdatas=siemens_yaml)
+
+    bs.create_task('task_b')

@@ -15,6 +15,30 @@ create_task:
        "d": {"customerCode":"1015","workSpaceCode":"01","originType":"10150104","originNo":id,"detailList":[{"stationName":"返回流程装载点-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"返回流程卸载点-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
        }
 
+task_a:
+    url: "http://gateway.siemens.test.internal.forwardx.com/rpm-server/api/transport/create2"
+    headers: {"workSpaceId": "2001","workSpaceCode": "01","userId": "2001","customerId": "79","deviceType": "3"}
+    json: {"customerCode":"1015","workSpaceCode":"01","originType":"10150101","originNo":id,"detailList":[{"stationName":"装载点1-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点1-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+
+
+task_b:
+    url: "http://gateway.siemens.test.internal.forwardx.com/rpm-server/api/transport/create2"
+    headers: {"workSpaceId": "2001","workSpaceCode": "01","userId": "2001","customerId": "79","deviceType": "3"}
+    json: {"customerCode":"1015","workSpaceCode":"01","originType":"10150102","originNo":id,"detailList":[{"stationName":"装载点2-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点2-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+
+
+task_c:
+    url: "http://gateway.siemens.test.internal.forwardx.com/rpm-server/api/transport/create2"
+    headers: {"workSpaceId": "2001","workSpaceCode": "01","userId": "2001","customerId": "79","deviceType": "3"}
+    json: {"customerCode":"1015","workSpaceCode":"01","originType":"10150103","originNo":id,"detailList":[{"stationName":"装载点3-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"西门子自动卸载点-001","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"西门子装空料架点-001","bizType":"BRING_BACK_LOADING","containerCode":"CON-1001"},{"stationName":"卸载点3-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+
+
+task_d:
+    url: "http://gateway.siemens.test.internal.forwardx.com/rpm-server/api/transport/create2"
+    headers: {"workSpaceId": "2001","workSpaceCode": "01","userId": "2001","customerId": "79","deviceType": "3"}
+    json: {"customerCode":"1015","workSpaceCode":"01","originType":"10150104","originNo":id,"detailList":[{"stationName":"返回流程装载点-001","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"返回流程卸载点-001","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+
+
 # 业务平台登录
 admin_login:
     url: "http://gateway.siemens.test.internal.forwardx.com/base-server/auth/login"

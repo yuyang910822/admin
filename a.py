@@ -12,5 +12,8 @@
 
 '''
 '''
-assert  False
-print(1)
+def a(*args):
+    print(eval(*args))
+
+
+a(1,2,3)

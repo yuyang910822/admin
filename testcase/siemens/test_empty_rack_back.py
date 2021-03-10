@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 -------------------------------------------------
-  @Time : 2021/3/9 15:27 
+  @Time : 2021/3/9 15:27
   @Auth : 于洋
   @File : test_empty_rack_back.py
   @IDE  : PyCharm
@@ -25,8 +25,12 @@ class Test_tack_d():
     def test_create(self):
         '''创建任务'''
         self.bs.log.info('---创建任务---')
-        self.bs.create_task('b')
-        assert self.bs.select_task_status() == '创建'
+        self.bs.create_task('d')
+        for i in range(1,100):
+            s = self.bs.select_task_status()
+            if s == '创建':
+                assert s == '创建'
+                break
 
 
     @allure.title('导航前往装载点')
@@ -49,9 +53,7 @@ class Test_tack_d():
         '''检测料架'''
         s = self.bs.task_status(k=2, v='intervene')
         assert s == True
-        # self.bs.log.debug('是否检测料架中：{}'.format(s[2][-1]))
-        # # 提前到达结果数据库同步慢，导致数据库状态更新，检测料架状态已以后，无法执行该用例
-        # assert s[2][-1] == 'intervene'
+
 
     @allure.title('检测料架异常')
     def test_docking_abnormal(self):
@@ -100,16 +102,17 @@ class Test_tack_d():
         '''undocking'''
         self.bs.log.info('---undocking---')
         s = self.bs.mysql.getstatus(self.bs.transportNo)
-        if s[6][-1] == 'finished' or s[6][-1] == 'intervene':
-            self.bs.log.debug('undocking状态：{}'.format(s[6][-1]))
-            if s[6][-1] == 'finished':
-                assert s[6][-1] == 'finished'
-            else:
-                assert s[6][-1] == 'intervene'
-                self.bs.resume()
-
-
-
+        for i in range(1,15):
+            time.sleep(1)
+            if s[6][-1] == 'finished' or s[6][-1] == 'intervene':
+                self.bs.log.debug('undocking状态：{}'.format(s[6][-1]))
+                if s[6][-1] == 'finished':
+                    assert s[6][-1] == 'finished'
+                else:
+                    assert s[6][-1] == 'intervene'
+                    self.bs.resume()
+        self.bs.log.debug(111111111111111)
+        return False
 
     @allure.title('任务完成')
     def test_finished(self):
