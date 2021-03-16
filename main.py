@@ -10,8 +10,9 @@
 """
 import pytest,os,sys
 
-pytest.main([ '-s','-v',
-              '--alluredir=allure-results'])
+# pytest.main([ '-s','-v',
+#               '--alluredir=allure-results'])
+pytest.main([ r'testcase\siemens\test_feeding_at_point_b.py', '-s', '-v'])
 
 
 # '--reruns=10','--reruns-delay=3',

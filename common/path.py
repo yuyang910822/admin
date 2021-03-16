@@ -27,3 +27,5 @@ mysql_dir = os.path.join(dirs +r'\config\mysql_config.yaml')
 
 siemens_yaml = os.path.join(dirs+r'\data\siemens.yaml')
 
+ajl_yaml = os.path.join(dirs+r'\data\ajl.yaml')
+

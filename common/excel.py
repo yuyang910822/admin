@@ -110,10 +110,11 @@ if __name__ == '__main__':
 #
 if __name__ == '__main__':
     import json
-    a = DoExcel(r'C:\Users\yuyang\Desktop\雅戈尔.xlsx','Sheet1')
+    a = DoExcel(r'C:\Users\yuyang\Desktop\2.1.xlsx','Sheet1')
     b = a.all()
     for i in b:
         print(i)
+
 
 
 

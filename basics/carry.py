@@ -50,11 +50,11 @@ class Carry_ability():
         data = self.testdatas[taskname]
         data['headers']['token'] = self.get_pda_token()
         data['json']['originNo'] =time.strftime("%Y%m%d%H%M%S")
-        self.log.info('pda下单参数:{}'.format(data))
+        self.log.debug('pda下单参数:{}'.format(data))
         r = requests.request('post', url=data['url'], headers=data['headers'],json=data['json'])
-        self.log.info('返回值：{}'.format(r.json()))
+        self.log.debug('返回值：{}'.format(r.json()))
         setattr(Carry_ability, 'transportNo', r.json()['result']['transportNo'])
-        self.log.info('反射:{}'.format(self.transportNo))
+        self.log.debug('反射:{}'.format(self.transportNo))
 
 
     def select_task_status(self):
@@ -62,13 +62,12 @@ class Carry_ability():
         data =self.testdatas['task_status']
         data['json']['transportNo'] = self.transportNo
         data['headers']['token'] = self.get_admin_token()
-        self.log.info(data)
+        self.log.debug(data)
         try:
             r = requests.request('post',url=data['url'],headers=data['headers'],json=data['json'])
         except:
             raise
-        self.log.info(r.json())
-        self.log.info(r.json()['result']['items'][0]['statusDesc'])
+        self.log.debug(r.json()['result']['items'][0]['statusDesc'])
         return r.json()['result']['items'][0]['statusDesc']
 
 
@@ -100,7 +99,7 @@ class Carry_ability():
         try:
             r = requests.request('post', url=data)
         except:
-            self.log.debug('finish 请求错误：{}'.format(r.json()))
+            self.log.error('finish 请求错误：{}'.format(r.json()))
             return False
         else:
             self.log.debug('请求成功')
@@ -124,17 +123,17 @@ class Carry_ability():
 
     def task_status(self,k,v,i=-1):
         '''获取任务集指定k的v'''
-
         for ll in range(1,1000):
             # 任务状态集
-            time.sleep(1)
+
+            time.sleep(2)
             s = self.mysql.getstatus(self.transportNo)
-            self.log.error('{}'.format(s))
+            self.log.debug('111111111111:::::::::::::::::::::::{}'.format(s))
             #判断状态集k与下标的值是否满足预期
             if s[k][i] == v:
                 self.log.debug('满足状态条件:{}'.format(s[k][i]))
                 return True
-            self.log.info('当前状态不满足:{}'.format(s[k][i]))
+            self.log.debug('当前状态不满足:{}'.format(s[k][i]))
 
         return False
 
@@ -146,7 +145,7 @@ class Carry_ability():
             s = self.mysql.getstatus(self.transportNo)
             self.log.debug('undocking:{}'.format(s))
             if s[k][i] == 'finished' or s[k][i] == 'intervene':
-                self.log.info('docking状态{}'.format(s[k][i]))
+                self.log.debug('docking状态{}'.format(s[k][i]))
                 if s[k][i] == 'finished':
                     return True
                 elif s[k][i] == 'intervene':
@@ -158,9 +157,42 @@ class Carry_ability():
         return False
 
 
+    def loadingFinish(self):
+        time.sleep(3)
+        data = self.testdatas['loadingFinish']
+        data['json']['detailList'][0]['taskDetailId'] = self.mysql.get_id_task_id(self.transportNo)[0][0]
+        data['json']['taskId'] = self.mysql.get_id_task_id(self.transportNo)[0][1]
+        self.log.debug(data)
+        try:
+            r = requests.request('post',url=data['url'],headers=data['headers'],json=data['json'])
+            self.log.debug('1:{}'.format(r.request.body))
+            self.log.debug('出发结果：{}'.format(r.json()))
+        except:
+            return False
+        else:
+            return True
+
+
+    def receiveMaterials(self):
+
+
+        time.sleep(3)
+        data = self.testdatas['loadingFinish']
+        data['json']['detailList'][0]['taskDetailId'] = self.mysql.get_id_task_id(self.transportNo)[1][0]
+        data['json']['taskId'] = self.mysql.get_id_task_id(self.transportNo)[1][1]
+        try:
+            r = requests.request('post',url=data['url'],headers=data['headers'],json=data['json'])
+            self.log.debug('出发结果：{}'.format(r.json()))
+        except:
+            return False
+        else:
+            return True
+
+
 if __name__ == '__main__':
     bs = Carry_ability(mysqlname='siemens_mysql',
                        logname='siemens', logpath=logs_dir + r'\siemens.log',
                        testdatas=siemens_yaml)
+
 
     bs.create_task('task_b')

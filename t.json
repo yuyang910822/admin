@@ -1,0 +1,14 @@
+{"configuration_id": "cf49bbd7d2384878bc3808733c9e9d8bpr01",
+      "configuration_name": "paramsGroup-bcf9",
+      "apply_results":
+         [
+             {"instance_id": "fe5f5a07539c431181fc78220713aebein01",
+              "instance_name": "zyy1"
+              },
+             {
+                 "instance_id": "73ea2bf70c73497f89ee0ad4ee008aa2in01",
+                 "instance_name": "zyy2"
+            }
+         ],
+     "success": "false"
+     }

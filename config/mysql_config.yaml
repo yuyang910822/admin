@@ -8,3 +8,10 @@ siemens_mysql:
   database: test_siemens_rpm
 
 
+ajl_mysql:
+  host: '127.0.0.1'
+  user: cluster
+  password: 'OK3iO9skpEcybGhx'
+  port: 3333
+  charset: utf8
+  database: cluster_system
