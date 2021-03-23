@@ -26,6 +26,7 @@ class Carry_ability():
 
     def __init__(self,mysqlname,logname,logpath,testdatas):
         self.mysqlpath = read_yaml(mysql_dir)
+
         self.mysql = Mysql(self.mysqlpath[mysqlname])
         self.testdatas = read_yaml(testdatas)
         self.log = Mylog(name=logname,file=logpath)
@@ -125,15 +126,13 @@ class Carry_ability():
         '''获取任务集指定k的v'''
         for ll in range(1,1000):
             # 任务状态集
-
             time.sleep(2)
             s = self.mysql.getstatus(self.transportNo)
-            self.log.debug('111111111111:::::::::::::::::::::::{}'.format(s))
             #判断状态集k与下标的值是否满足预期
             if s[k][i] == v:
                 self.log.debug('满足状态条件:{}'.format(s[k][i]))
                 return True
-            self.log.debug('当前状态不满足:{}'.format(s[k][i]))
+        self.log.debug('当前状态不满足:{}'.format(s[k][i]))
 
         return False
 
@@ -174,8 +173,7 @@ class Carry_ability():
 
 
     def receiveMaterials(self):
-
-
+        '''物料接收'''
         time.sleep(3)
         data = self.testdatas['loadingFinish']
         data['json']['detailList'][0]['taskDetailId'] = self.mysql.get_id_task_id(self.transportNo)[1][0]
@@ -188,11 +186,17 @@ class Carry_ability():
         else:
             return True
 
+    def division(self):
+        '''作业分工'''
+        data = self.testdatas['division']
+        data['headers']['token'] = self.get_pda_token()
+        print(data)
+        r = requests.request('put',url=data['url'],headers=data['headers'],json=data['json'])
+        self.log.debug('作业分工结果{}'.format(r.json()))
 
 if __name__ == '__main__':
-    bs = Carry_ability(mysqlname='siemens_mysql',
-                       logname='siemens', logpath=logs_dir + r'\siemens.log',
-                       testdatas=siemens_yaml)
+    bs = Carry_ability(mysqlname='standard_mysql',
+                       logname='blue', logpath=logs_dir + r'\siemens.log',
+                       testdatas=blue_yaml)
+    bs.division()
 
-
-    bs.create_task('task_b')

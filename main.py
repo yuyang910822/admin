@@ -12,8 +12,10 @@ import pytest,os,sys
 
 # pytest.main([ '-s','-v',
 #               '--alluredir=allure-results'])
-pytest.main([ r'testcase\siemens\test_feeding_at_point_b.py', '-s', '-v'])
 
+
+
+pytest.main([ r'testcase\Standard_one_to_one_manual\ajl\test_ajl_task.py', '-s', '-v'])
 
 # '--reruns=10','--reruns-delay=3',
 

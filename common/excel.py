@@ -22,16 +22,16 @@ class DoExcel():
 
 
     def firstline(self) -> list:
-        '''首行信息'''
+        """首行信息"""
         return [i.value for i in self.sheet[1]]
 
     def all(self) -> list:
-        '''测试数据'''
+        """测试数据"""
         # self.sheet
         testdata = []
         maxrow = self.sheet.max_row
         if  maxrow <= 1:
-            print('无法拼接数据，请检查{}的{}表'.format(self.f,self.s))
+            print("无法拼接数据，请检查{}的{}表".format(self.f,self.s))
         elif maxrow == 2:
             ii = []
             for i in self.sheet[2:maxrow]:
@@ -56,7 +56,7 @@ class DoExcel():
     def result(self,data,new,v):
 
         # 写入数据
-        self.sheet.cell(data['id']+1,new,v)
+        self.sheet.cell(data["id"]+1,new,v)
         # 保存文件
         self.workbook.save(ExcelConfig.testDataPant)
         # 关闭工作薄
@@ -70,35 +70,35 @@ class DoExcel():
         code=str(random.randint(100, 9999999))
         data1=str(random.randint(100, 9999999))
         if name !=code:
-            if re.search('name',str(data)):
-                data['json'] = data['json'].replace('name',name)
-            if re.search('code',str(data)):
-                data['json'] = data['json'].replace('code',code)
-            if re.search('data',str(data)):
-                data['json'] = data['json'].replace('data',data1)
+            if re.search("name",str(data)):
+                data["json"] = data["json"].replace("name",name)
+            if re.search("code",str(data)):
+                data["json"] = data["json"].replace("code",code)
+            if re.search("data",str(data)):
+                data["json"] = data["json"].replace("data",data1)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     pass
 
 #
 #
 #         if not phoneid == None:
-#             if re.search('phoneid',str(data)):
+#             if re.search("phoneid",str(data)):
 #                 p  = set_phoneid()
-#                 data['json'] = data['json'].replace('phoneid', p)
-#                 data['expect'] = data['expect'].replace('phoneid', p)
+#                 data["json"] = data["json"].replace("phoneid", p)
+#                 data["expect"] = data["expect"].replace("phoneid", p)
 #
 #         if not id == None:
-#             if re.search('expectid',str(data)):
-#                 if re.search('id',str(id)):
-#                     i = id['data']['id']
+#             if re.search("expectid",str(data)):
+#                 if re.search("id",str(id)):
+#                     i = id["data"]["id"]
 #
-#                     data['expect'] = data['expect'].replace('expectid', str(i))
+#                     data["expect"] = data["expect"].replace("expectid", str(i))
 #                     self.open()
 #                     # 写入数据
-#                     self.sheet.cell(data['id'] + 1, 6, data['expect'])
-#                     self.sheet.cell(data['id'] + 1, 5, data['json'])
+#                     self.sheet.cell(data["id"] + 1, 6, data["expect"])
+#                     self.sheet.cell(data["id"] + 1, 5, data["json"])
 #                     # 保存文件
 #                     self.workbook.save(ExcelConfig.testResuitPath)
 #                     # 关闭工作薄
@@ -108,13 +108,12 @@ if __name__ == '__main__':
 #
 #
 #
-if __name__ == '__main__':
+if __name__ == "__main__":
     import json
-    a = DoExcel(r'C:\Users\yuyang\Desktop\2.1.xlsx','Sheet1')
-    b = a.all()
-    for i in b:
-        print(i)
-
-
-
-
+    a = DoExcel(r"C:\Users\yuyang\Desktop\a.xlsx","Sheet1")
+    # b = a.all()
+    # for i in b:
+    #     print(i)
+    #
+    #
+    print(help(a))

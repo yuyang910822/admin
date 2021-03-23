@@ -7,7 +7,6 @@ class Mysql():
     '''数据库操作'''
 
     def __init__(self,data):
-        print(data)
         self.db = pymysql.connect(host= data['host'],user = data['user'],password = data['password'],
                                   port = data['port'],charset = data['charset'],database= data['database'])
         # ,cursorclass=pymysql.cursors.DictCursor
@@ -54,14 +53,12 @@ class Mysql():
                 # "tt.`id` INNER JOIN t_rcs_job trj ON trj.`robot_task_id` = trt.`id` INNER JOIN t_rcs_task"
                 # " rt ON rt.`job_id` = trj.`id` WHERE tt.`transport_no` = '{}'".format(by))
         except :
-            print('111\n11\n11\n111111111111111111111\n')
             self.db.rollback()
             raise
         else:
 
             status = {}
             for i in list(self.c.fetchall()):
-                print(1111111111111111111111111111,status)
                 status[i[0]] = i[1:]
             self.db.commit()
             return status

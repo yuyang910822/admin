@@ -25,7 +25,9 @@ api_dir = os.path.join(dirs +r'\config\api_config.yaml')
 # 数据库文件目录
 mysql_dir = os.path.join(dirs +r'\config\mysql_config.yaml')
 
-siemens_yaml = os.path.join(dirs+r'\data\siemens.yaml')
+siemens_yaml = os.path.join(dirs+r'\data\Standard_one_to_one_handling\siemens.yaml')
 
-ajl_yaml = os.path.join(dirs+r'\data\ajl.yaml')
+ajl_yaml = os.path.join(dirs+r'\data\Standard_one_to_one_manual\ajl.yaml')
+
+blue_yaml = os.path.join(dirs+r'\data\Standard_one_to_one_stopover\blue.yaml')
 

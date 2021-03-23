@@ -1,0 +1,52 @@
+# pda登录，提取Token
+pda_login:
+    url: "http://8.131.255.99:8023/base-server/auth/login"
+    headers: {"workSpaceId": "39","workSpaceCode": "01","userId": "2081","customerId": "9","deviceType": "3",customerCode: "1033"}
+    json: {"userName": "blue_admin", "password": "51175b91c234030a1d4b2b5f818ba56d"}
+
+
+# 创建任务
+task_a:
+    url: "http://8.131.255.99:8023/rpm-server/api/transport/create2"
+    headers: {"workSpaceId": "36","workSpaceCode": "01","userId": "2071","customerId": "95","deviceType": "3",customerCode: "1031"}
+    json: {"customerCode":"1031","workSpaceCode":"01","originType":"10310101","originNo":1616403945853,"createUserName":"blue_admin","createUserId":2071,"detailList":[{"stationName":"装载点-201yyy","bizType":"LOADING","containerCode":"CON-1001"},{"stationName":"停等点-201yyy","bizType":"RECEIVE","containerCode":"CON-1001"},{"stationName":"卸载点-201yyy","bizType":"UNLOADING","containerCode":"CON-1001"}]}
+
+# 业务平台登录
+admin_login:
+    url: "http://8.131.255.99:8023/base-server/auth/login"
+#    headers: {"Content-Length": "70","deviceType": "1","workSpaceCode": "01","userId": "2001","customerId": "79","workSpaceId": "2001"}
+    headers: {"deviceType":"1"}
+    json: {"userName":"blue_admin","password":"51175b91c234030a1d4b2b5f818ba56d"}
+
+
+# 查询任务状态
+task_status:
+    url: "http://8.131.255.99:8023/rpm-server/transport/page"
+    headers: {"deviceType": "1","workSpaceCode": "01","userId": "2071","customerId": "95","workSpaceId": "36"}
+    json: {"pageNumber": 1,"pageSize": 10,"transportNo": "BY"}
+
+
+
+
+# 提前到达
+finish: 'http://10.3.1.98:7000/api/jobs/finish'
+
+# 异常转人工
+resume: 'http://10.3.1.98:7000/api/jobs/resume_sub_task'
+
+## 出发
+#loadingFinish:
+#    url: 'http://8.131.255.99:8023/rpm-server/page/arrived/arriveLoadingStation/loadingFinish'
+#    headers: {deviceType: "2"}
+#    json: {"detailList":[{"taskDetailId":4599}],"stationName":"装载点-201yyy","taskId":3134}
+
+
+# 作业分工
+division:
+    url: 'http://8.131.255.99:8023/rpm-server/division/2188'
+    headers: {"deviceType": "1","workSpaceCode": "01","userId": "2071","customerId": "95","workSpaceId": "36"}
+    json: {"id":2188,"customerId":95,"customerCode":"1031","customerName":"blue","workSpaceId":36,"workSpaceCode":"01","workSpaceName":"blue","robotId":"0e8264af-8235-473a-a9a0-49f1d7cc9653","robotCode":"601","workingMode":"2","workingModeName":"物料运送","bizFlowType":"10310101","bizFlowName":"标准一对一中途停等","createUserId":2071,"createUserName":"blue","createTime":1615516662000,"updateUserId":2071,"updateUserName":"blue","updateTime":1616403177000}
+#receiveMaterials:
+#    url: 'http://8.131.255.99:8023/rpm-server/page/arrived/arriveLoadingStation/receiveMaterials'
+#    headers: {deviceType: "2"}
+#    json: {"detailList":[{"taskDetailId":4600}],"stationName":"卸载点-201yyy","taskId":3134}
