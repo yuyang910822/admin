@@ -88,10 +88,21 @@ class Mysql():
             return self.c.fetchall()
 
 
+
+    def getrobotcoude(self):
+        try:
+            self.c.execute('SELECT distinct t1.robot_code,t2.internal_station_name FROM t_robot_task t1, t_robot_task_detail t2 WHERE t1.id = t2.`task_id`  AND t1.`biz_type` = "PICK_LOCATION"   AND t1.`status` = 200   AND t2.`status` = 100 and t2.arrival_time is not null')
+        except:
+            self.db.rollback()
+        else:
+            self.db.commit()
+            return self.c.fetchall()
+
 if __name__ == '__main__':
     mysqlpath = read_yaml(mysql_dir)
 
-    a =Mysql(data=mysqlpath['ajl_mysql'])
+    a =Mysql(data=mysqlpath['jj'])
 
-    print(a.getstatus('BY20210315002865'))
+    b = a.getrobotcoude()
+    print(b[0]) #('001', '3CE011')
 

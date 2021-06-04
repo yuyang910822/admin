@@ -15,3 +15,12 @@ standard_mysql:
   port: 3333
   charset: utf8
   database: cluster_system
+
+
+jj:
+  host: '10.74.51.250'
+  user: root
+  password: '123123'
+  port: 3306
+  charset: utf8
+  database: rpm

@@ -25,9 +25,18 @@ api_dir = os.path.join(dirs +r'\config\api_config.yaml')
 # 数据库文件目录
 mysql_dir = os.path.join(dirs +r'\config\mysql_config.yaml')
 
-siemens_yaml = os.path.join(dirs+r'\data\Standard_one_to_one_handling\siemens.yaml')
+# 西门子
+siemens_yaml = os.path.join(dirs+r'\data\siemens.yaml')
 
-ajl_yaml = os.path.join(dirs+r'\data\Standard_one_to_one_manual\ajl.yaml')
+# 广域铭岛
+link_yaml = os.path.join(dirs+r'\data\link.yaml')
 
-blue_yaml = os.path.join(dirs+r'\data\Standard_one_to_one_stopover\blue.yaml')
+# 安捷利
+ajl_yaml = os.path.join(dirs+r'\data\ajl.yaml')
+
+# 大连坚山
+blue_yaml = os.path.join(dirs+r'\data\blue.yaml')
+
+# 冬奥测试赛
+dacs_yaml = os.path.join(dirs,r'\data\blue.yaml')
 

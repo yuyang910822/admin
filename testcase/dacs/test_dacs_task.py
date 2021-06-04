@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """
 -------------------------------------------------
-  @Time : 2021/3/15 15:13 
+  @Time : 2021/3/23 15:07 
   @Auth : 于洋
-  @File : test_blue_task.py
+  @File : test_dacs_task.py
   @IDE  : PyCharm
   @Motto: ABC(Always Be Coding)
 -------------------------------------------------
@@ -14,11 +14,11 @@ from basics.carry import Carry_ability
 from common.path import *
 
 
-class Test_blue():
+class Test_dacs():
 
     bs = Carry_ability(mysqlname='standard_mysql',
-                       logname='blue', logpath=logs_dir + r'\blue.log',
-                       testdatas=blue_yaml)
+                       logname='dacs', logpath=logs_dir + r'\dacs.log',
+                       testdatas=dacs_yaml)
 
 
 

@@ -28,17 +28,12 @@ task_status:
 
 
 
-# 提前到达
-finish: 'http://10.3.1.98:7000/api/jobs/finish'
-
-# 异常转人工
-resume: 'http://10.3.1.98:7000/api/jobs/resume_sub_task'
-
 # 出发
 loadingFinish:
     url: 'http://8.131.255.99:8023/rpm-server/page/arrived/arriveLoadingStation/loadingFinish'
     headers: {deviceType: "2"}
     json: {"detailList":[{"taskDetailId":4599}],"stationName":"装载点-201yyy","taskId":3134}
+
 
 receiveMaterials:
     url: 'http://8.131.255.99:8023/rpm-server/page/arrived/arriveLoadingStation/receiveMaterials'

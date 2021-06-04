@@ -39,14 +39,15 @@ class DoExcel():
             z = dict(zip(self.firstline(), ii))
             testdata.append(z)
         else:
-            for i in self.sheet[2:maxrow]:
-                ii = []
+            ii = []
+            for i in self.sheet[1:maxrow]:
+                # ii = []
                 for j in i:
                     ii.append(j.value)
-                z = dict(zip(self.firstline(), ii))
-                testdata.append(z)
+                # z = dict(zip(self.firstline(), ii))
+                # testdata.append(z)
         self.close()
-        return testdata
+        return ii
 
 
 
@@ -56,9 +57,9 @@ class DoExcel():
     def result(self,data,new,v):
 
         # 写入数据
-        self.sheet.cell(data["id"]+1,new,v)
+        self.sheet.cell(data+1,new,v)
         # 保存文件
-        self.workbook.save(ExcelConfig.testDataPant)
+        self.workbook.save(r"C:\Users\yuyang\Downloads\kk仓.xlsx")
         # 关闭工作薄
         self.close()
 
@@ -78,42 +79,9 @@ class DoExcel():
                 data["json"] = data["json"].replace("data",data1)
 
 
-if __name__ == "__main__":
-    pass
 
-#
-#
-#         if not phoneid == None:
-#             if re.search("phoneid",str(data)):
-#                 p  = set_phoneid()
-#                 data["json"] = data["json"].replace("phoneid", p)
-#                 data["expect"] = data["expect"].replace("phoneid", p)
-#
-#         if not id == None:
-#             if re.search("expectid",str(data)):
-#                 if re.search("id",str(id)):
-#                     i = id["data"]["id"]
-#
-#                     data["expect"] = data["expect"].replace("expectid", str(i))
-#                     self.open()
-#                     # 写入数据
-#                     self.sheet.cell(data["id"] + 1, 6, data["expect"])
-#                     self.sheet.cell(data["id"] + 1, 5, data["json"])
-#                     # 保存文件
-#                     self.workbook.save(ExcelConfig.testResuitPath)
-#                     # 关闭工作薄
-#                     self.close()
-#
-#         return data
-#
-#
-#
 if __name__ == "__main__":
     import json
-    a = DoExcel(r"C:\Users\yuyang\Desktop\a.xlsx","Sheet1")
-    # b = a.all()
-    # for i in b:
-    #     print(i)
-    #
-    #
-    print(help(a))
+    a = DoExcel(r"C:\Users\yuyang\Downloads\kk仓.xlsx","Sheet1")
+    # a.result(1,1,'OT1029821050700000066')
+    a.result(109,4,'3CJ441')

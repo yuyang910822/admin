@@ -14,7 +14,7 @@ from basics.carry import Carry_ability
 from common.path import *
 
 
-
+allure.feature('B点送料流程')
 class  Test_task_B():
     '''B点送料流程'''
 

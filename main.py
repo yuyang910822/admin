@@ -18,7 +18,7 @@ import pytest,os,sys
 pytest.main([ r'testcase\Standard_one_to_one_manual\ajl\test_ajl_task.py', '-s', '-v'])
 
 # '--reruns=10','--reruns-delay=3',
-
+#执行
 # os.system('pytest -s -v --alluredir=allure-results')
 # os.system('allure generate allure-results -o allure-report -c')
 # os.system('allure open allure-report')

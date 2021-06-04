@@ -9,9 +9,6 @@
 -------------------------------------------------
 """
 import requests,time
-
-
-
 from common.mysql import Mysql
 from common.log import Mylog
 from common.return_yaml import *
@@ -20,16 +17,21 @@ from common.return_yaml import *
 class Carry_ability():
     '''基础功能封装'''
 
-    transportNo = ''
+
+    # transportNo = ''
 
 
 
     def __init__(self,mysqlname,logname,logpath,testdatas):
-        self.mysqlpath = read_yaml(mysql_dir)
+        # self.mysqlpath = read_yaml(mysql_dir)
+        # self.mysql = Mysql(mysqlpath[mysqlname])
 
-        self.mysql = Mysql(self.mysqlpath[mysqlname])
+        self.mysql = Mysql(read_yaml(mysql_dir)[mysqlname])
         self.testdatas = read_yaml(testdatas)
         self.log = Mylog(name=logname,file=logpath)
+
+    finish = 'http://10.3.1.98:7000/api/jobs/finish'
+    resume = 'http://10.3.1.98:7000/api/jobs/resume_sub_task'
 
     def get_pda_token(self):
         '''获取pda端token'''
@@ -77,8 +79,8 @@ class Carry_ability():
         i = self.mysql.get_id(self.transportNo)
         self.log.debug(i)
         data = self.testdatas['rack']
-        data['json']['detailList'][0]['taskDetailId'] = i[0]
-        data['json']['taskId'] =i[1]
+        data['json']['detailList'][0]['taskDetailId']= i[0]
+        data['json']['taskId'] = i[1]
         self.log.debug('请求参数:{}'.format(data))
         for i in range(1,10):
             time.sleep(1)
@@ -96,9 +98,9 @@ class Carry_ability():
 
     def finish(self):
         '''提前到达'''
-        data = self.testdatas['finish']
+
         try:
-            r = requests.request('post', url=data)
+            r = requests.request('post', url=self.finish)
         except:
             self.log.error('finish 请求错误：{}'.format(r.json()))
             return False
@@ -108,9 +110,9 @@ class Carry_ability():
 
     def resume(self):
         '''人工处理'''
-        data= self.testdatas['resume']
+
         try:
-            r = requests.request('post', url=data)
+            r = requests.request('post', url=self.resume)
             self.log.debug('resume 请求{}'.format(r.json()))
         except:
             return False
@@ -157,6 +159,7 @@ class Carry_ability():
 
 
     def loadingFinish(self):
+        '''出发'''
         time.sleep(3)
         data = self.testdatas['loadingFinish']
         data['json']['detailList'][0]['taskDetailId'] = self.mysql.get_id_task_id(self.transportNo)[0][0]
@@ -190,13 +193,14 @@ class Carry_ability():
         '''作业分工'''
         data = self.testdatas['division']
         data['headers']['token'] = self.get_pda_token()
-        print(data)
+        self.log.debug(data)
         r = requests.request('put',url=data['url'],headers=data['headers'],json=data['json'])
         self.log.debug('作业分工结果{}'.format(r.json()))
 
 if __name__ == '__main__':
-    bs = Carry_ability(mysqlname='standard_mysql',
-                       logname='blue', logpath=logs_dir + r'\siemens.log',
-                       testdatas=blue_yaml)
+    print(logs_dir)
+    print(os.path.join(logs_dir,'siemens.log'))
+    print(blue_yaml)
+    bs = Carry_ability(mysqlname='standard_mysql', logname='blue', logpath=os.path.join(logs_dir,'siemens.log'), testdatas=blue_yaml)
     bs.division()
 

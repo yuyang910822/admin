@@ -1,0 +1,63 @@
+# pda登录，提取Token
+pda_login:
+    url: "http://119.3.230.149:8023/base-server/auth/login"
+    headers: {"workSpaceId": "50","workSpaceCode": "01","userId": "2151","customerId": "107","deviceType": "3",customerCode: "1043"}
+    json: {"userName":"gymd_admin","password":"25dcac38a3675d779df5a92cade0848b"}
+
+
+# 创建任务
+task_a:
+    url: http://119.3.230.149:8023/rpm-server/api/transport/create2
+    headers: {"workSpaceId": "50","workSpaceCode": "01","userId": "2151","customerId": "107","deviceType": "3",customerCode: "1043"}
+    json: {
+      "detailList": [
+      {
+        "containerCode": "containerCode",
+        "containerType": 0,
+        "goodsBarcode": "2222",
+        "goodsId": "2222222",
+        "goodsName": "2222",
+        "planQty": 0,
+        "stationName": "国网装载点-001",
+        "bizType": "LOADING"
+
+      },{
+        "containerCode": "containerCode",
+        "containerType": 0,
+        "goodsBarcode": "2222",
+        "goodsId": "2222222",
+        "goodsName": "2222",
+        "planQty": 0,
+        "stationName": "国网卸载点-101",
+        "bizType": "UNLOADING"
+      }
+      ],
+      "createUserName": "createUserName",
+      "customerCode": "1043",
+      "originNo": "1622712486",
+      "originType": "10430101",
+      "priority": 0,
+      "workSpaceCode": "01"
+    }
+
+
+
+# 业务平台登录
+admin_login:
+    url: "http://119.3.230.149:8023/base-server/auth/login"
+    headers: {"deviceType": "1"}
+    json: {"userName":"gymd_admin","password":"25dcac38a3675d779df5a92cade0848b"}
+
+# 查询任务状态
+task_status:
+    url: "http://119.3.230.149:8023/rpm-server/transport/page"
+    headers: {"deviceType": "1","workSpaceCode": "01","userId": "2151","customerId": "107","workSpaceId": "50"}
+    json: {"pageNumber": 1,"pageSize": 10,"transportNo": "BY"}
+
+
+# 作业分工
+division:
+    url: 'http://8.131.255.99:8023/rpm-server/division/2188'
+    headers: {"deviceType": "1","workSpaceCode": "01","userId": "2071","customerId": "95","workSpaceId": "36"}
+    json: {"id":2188,"customerId":95,"customerCode":"1031","customerName":"blue","workSpaceId":36,"workSpaceCode":"01","workSpaceName":"blue","robotId":"0e8264af-8235-473a-a9a0-49f1d7cc9653","robotCode":"601","workingMode":"2","workingModeName":"物料运送","bizFlowType":"10310101","bizFlowName":"标准一对一中途停等","createUserId":2071,"createUserName":"blue","createTime":1615516662000,"updateUserId":2071,"updateUserName":"blue","updateTime":1616403177000}
+

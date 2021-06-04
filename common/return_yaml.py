@@ -13,8 +13,8 @@ from common.path import *
 
 def read_yaml(path):
     '''
-    path: 读取文件路径
-    title：文件数据对象标题
+    path: 路径
+    return：读取的数据
     '''
     with open(path, encoding='utf-8') as y:
         data = yaml.load(y, Loader=yaml.FullLoader)

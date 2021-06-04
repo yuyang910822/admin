@@ -34,19 +34,9 @@ finish: 'http://10.3.1.98:7000/api/jobs/finish'
 # 异常转人工
 resume: 'http://10.3.1.98:7000/api/jobs/resume_sub_task'
 
-## 出发
-#loadingFinish:
-#    url: 'http://8.131.255.99:8023/rpm-server/page/arrived/arriveLoadingStation/loadingFinish'
-#    headers: {deviceType: "2"}
-#    json: {"detailList":[{"taskDetailId":4599}],"stationName":"装载点-201yyy","taskId":3134}
-
 
 # 作业分工
 division:
     url: 'http://8.131.255.99:8023/rpm-server/division/2188'
     headers: {"deviceType": "1","workSpaceCode": "01","userId": "2071","customerId": "95","workSpaceId": "36"}
     json: {"id":2188,"customerId":95,"customerCode":"1031","customerName":"blue","workSpaceId":36,"workSpaceCode":"01","workSpaceName":"blue","robotId":"0e8264af-8235-473a-a9a0-49f1d7cc9653","robotCode":"601","workingMode":"2","workingModeName":"物料运送","bizFlowType":"10310101","bizFlowName":"标准一对一中途停等","createUserId":2071,"createUserName":"blue","createTime":1615516662000,"updateUserId":2071,"updateUserName":"blue","updateTime":1616403177000}
-#receiveMaterials:
-#    url: 'http://8.131.255.99:8023/rpm-server/page/arrived/arriveLoadingStation/receiveMaterials'
-#    headers: {deviceType: "2"}
-#    json: {"detailList":[{"taskDetailId":4600}],"stationName":"卸载点-201yyy","taskId":3134}
